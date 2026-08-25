@@ -14,7 +14,7 @@ A datapack to extend the features of llama's bastion practice map.
 - Added a tutorial to set up a bastion practice instance to the help message
 - Fixed breaking blocks in lobby after resets
 - Custom piedar options (Half done, not merged)
-- Guaranteed 5 obsidian and 3 iron chests across the whole bastion (Not done)
+- Guaranteed 5 obsidian and a 3 iron chest across the whole bastion (never in bottom treasure)
 - Custom spawn locations (Not done)
 
 ### Disclaimer
