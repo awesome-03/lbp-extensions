@@ -13,6 +13,9 @@ execute if score selection chest_menu matches 5 unless score bastion settings ma
 execute if score selection chest_menu matches 5 unless score bastion settings matches 5 run scoreboard players set page chest_menu 3
 execute if score selection chest_menu matches 6 run scoreboard players set page chest_menu 1
 
+execute if score selection chest_menu matches 7 if score items chest_menu matches 2 run scoreboard players add guarantee_loot bastion.settings 1
+execute if score selection chest_menu matches 7 if score items chest_menu matches 1 run scoreboard players remove guarantee_loot bastion.settings 1
+
 # Reset clipping scores
 execute if score rerun_terrain settings matches 2.. run scoreboard players set rerun_terrain settings 0
 execute if score rerun_terrain settings matches ..-1 run scoreboard players set rerun_terrain settings 1
@@ -22,3 +25,5 @@ execute if score natural_mobs settings matches 2.. run scoreboard players set na
 execute if score natural_mobs settings matches ..-1 run scoreboard players set natural_mobs settings 1
 execute if score practice_floor settings matches 2.. run scoreboard players set practice_floor settings 0
 execute if score practice_floor settings matches ..-1 run scoreboard players set practice_floor settings 1
+execute if score guarantee_loot bastion.settings matches 2.. run scoreboard players set guarantee_loot bastion.settings 0
+execute if score guarantee_loot bastion.settings matches ..-1 run scoreboard players set guarantee_loot bastion.settings 1

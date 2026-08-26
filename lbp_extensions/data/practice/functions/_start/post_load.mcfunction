@@ -97,6 +97,9 @@ execute if score rerun_terrain settings matches 0 as @e[type=area_effect_cloud, 
 execute if score rerun_terrain settings matches 0 run function practice:_start/terrain/save
 execute if score rerun_terrain settings matches 0 as @e[type=area_effect_cloud, tag=!hub_entity, tag=!bastion_chest] at @s run tp ~ ~-100 ~
 
+# Reroll chests for ranked loot if the option is enabled
+execute if score guarantee_loot bastion.settings matches 1 run function lbp_ext:guarantee_loot/run
+
 # Reset movement detection
 execute as @a run function practice:_start/movement_detection/set_home
 scoreboard players reset @a jumps

@@ -68,6 +68,9 @@ execute if score bridge_guarantee_triple bastion.settings matches 1 run function
 
 
 
+# Reroll chests for ranked loot if the option is enabled
+execute if score guarantee_loot bastion.settings matches 1 run function lbp_ext:guarantee_loot/run
+
 # Teleport the player to the selected spawnpoint
 tp @s @e[type=area_effect_cloud, tag=selected_spawnpoint, limit=1]
 execute at @e[type=area_effect_cloud, tag=selected_spawnpoint, limit=1] run fill ~ ~ ~ ~ ~1 ~ air

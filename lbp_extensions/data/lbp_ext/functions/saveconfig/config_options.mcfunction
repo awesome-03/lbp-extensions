@@ -47,6 +47,9 @@
 # Tick Warp: (0: 0m 0s, 1: 0m 30s, 2: 1m 0s, 3: 1m 30s, 4: 2m 0s)
 # scoreboard players set tick_warp settings 0
 
+# Ranked Loot Guaranteed: (0: Disabled, 1: Enabled) (Guarantees 5 obsidian and a 3 iron chest across the bastion, never in bottom treasure)
+# scoreboard players set guarantee_loot bastion.settings 0
+
 
 # PAGE 3: STRUCTURE SPECIFIC SETTINGS
 
