@@ -45,6 +45,9 @@ execute if score has_carpet practice matches 1 run function lbp_ext:carpet/stop
 function practice:soft_reset
 
 execute as @a in the_nether run tp @s 0 300 0
-schedule function practice:_stop/teleport_to_hub 1t
+execute unless score #reset_from_chat practice matches 1 run schedule function practice:_stop/teleport_to_hub 1t
+execute if score #reset_from_chat practice matches 1 run schedule function practice:_stop/teleport_to_hub 2t
 
 scoreboard players set running bastion.temp 0
+scoreboard players set #has_state_inventory practice 0
+scoreboard players set #reset_from_chat practice 0

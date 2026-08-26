@@ -1,8 +1,9 @@
 {
-    "replace": false,
-    "values": [
-        "red_carpet",
-        "fire_charge",
-        "chest_minecart"
-    ]
+  "replace": false,
+  "values": [
+    "red_carpet",
+    "fire_charge",
+    "diamond",
+    "chest_minecart"
+  ]
 }

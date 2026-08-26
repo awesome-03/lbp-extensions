@@ -158,3 +158,5 @@ execute unless score bastion_rot_c_0 practice = bastion_rot_c_0 practice run sco
 execute unless score bastion_rot_c_90 practice = bastion_rot_c_90 practice run scoreboard players set bastion_rot_c_90 practice 0
 execute unless score bastion_rot_c_180 practice = bastion_rot_c_180 practice run scoreboard players set bastion_rot_c_180 practice 0
 execute unless score bastion_rot_c_270 practice = bastion_rot_c_270 practice run scoreboard players set bastion_rot_c_270 practice 0
+execute unless score #reverse_pick_throw practice = #reverse_pick_throw practice run scoreboard players set #reverse_pick_throw practice 0
+

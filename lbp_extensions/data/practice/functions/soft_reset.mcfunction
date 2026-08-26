@@ -1,6 +1,9 @@
 # Extinguish fire
-# execute if entity @a[gamemode=survival] run schedule function practice:_start/silent_gamemode/survival 1t
-execute if entity @a[gamemode=adventure] run schedule function practice:_start/silent_gamemode/adventure 1t
+# execute unless score #reset_from_chat practice matches 1 if entity @a[gamemode=survival] run schedule function practice:_start/silent_gamemode/survival 1t
+
+execute unless score #reset_from_chat practice matches 1 if entity @a[gamemode=adventure] run schedule function practice:_start/silent_gamemode/adventure 1t
+execute if score #reset_from_chat practice matches 1 if entity @a[gamemode=adventure] run schedule function practice:_start/silent_gamemode/adventure 2t
+
 function practice:_start/silent_gamemode/creative
 
 # Reset health
