@@ -92,7 +92,7 @@ execute unless score ui practice = ui practice run scoreboard players set ui pra
 execute unless score id_piglins bastion.settings = id_piglins bastion.settings run scoreboard players set id_piglins bastion.settings 0
 
 # Ranked loot
-execute unless score guarantee_loot bastion.settings = guarantee_loot bastion.settings run scoreboard players set guarantee_loot bastion.settings 1
+execute unless score guarantee_loot bastion.settings = guarantee_loot bastion.settings run scoreboard players set guarantee_loot bastion.settings 0
 
 scoreboard players set running bastion.temp 0
 
