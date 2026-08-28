@@ -1,7 +1,7 @@
-# Vanilla only fills empty slots, so clear the last roll before opening it again
+# Clear the old roll, loot only fills empty slots
 data modify block ~ ~ ~ Items set value []
 
-# Give the chest the next seed and open it again
+# Reseed and open again
 scoreboard players add current bastion.rng 1
 execute if entity @s[tag=other_chest] run data merge block ~ ~ ~ {LootTable:"minecraft:chests/bastion_other"}
 execute if entity @s[tag=bridge_chest] run data merge block ~ ~ ~ {LootTable:"minecraft:chests/bastion_bridge"}
