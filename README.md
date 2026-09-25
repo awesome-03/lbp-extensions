@@ -7,7 +7,7 @@ A datapack to extend the features of llama's bastion practice map.
 1. Download the latest release [here](https://github.com/awesome-03/lbp-extensions/releases/latest/download/lbp_extensions.zip/)
 2. Open your instance folder, click the `saves` folder and find your bastion map folder
 3. Extract the zip you downloaded and put it in your world's `datapacks` folder
-4. Join the world and run the `/replay` command
+4. Join the world and run the `/reload` command
 
 ## Features
 
@@ -43,6 +43,11 @@ A datapack to extend the features of llama's bastion practice map.
   - Make mode toggle able to switch to Confirm mode
   - Command to get crossbow, sword, and paralyzed piglin spawn eggs
   - Command to give potion (?) to spawn a pig on a specific block (?) for testing late pig states
+  - Command to be able to one shot piglins with a weapon or punch (?)
+  - Command to not let you reset at all so you don't accidentally get rid of a savestate
+- Option to auto savestate at load so when you die it doesn't go to a different bastion
+- Option to revoke pre-bastion advancements on run start to simulate advancement toasts
+- Reorganize the function tags, add/remove some to easily change things mid run without the GUI
 
 **Fixes:**
 - Remove the body of the dead duplicated piglins so they don't appear
