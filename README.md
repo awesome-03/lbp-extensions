@@ -39,6 +39,10 @@ A datapack to extend the features of llama's bastion practice map.
   - The stalls in the stables, the housing units and center piece, and the treasure room's walls and corners go through their vanilla variants the same way. LBP builds those as one of 100 prebuilt layouts, which got matched back to vanilla's pieces
   - Mobs, chests and labels come with the new piece, the rest of the bastion stays as it is
   - Resetting brings back what LBP rolled, unless you save a state, then the shuffled layout is what resets go back to
+- Added a Block Decay option to the treasure settings: Vanilla, High-Roll (decay chances x2) or Low-Roll (x0.5)
+  - Covers cracked bricks, gilded blackstone, missing blocks in the roof, outer walls and top ramparts, and the magma and gold blocks that turn into bricks
+  - LBP saves the treasure room's decay with each of its 100 layouts, so the same layout always had the same gilded blackstone. The room's decay is now rolled again every run with vanilla's rules
+  - The top rampart's holes get likelier the higher up they are, like in vanilla, instead of one flat chance
 
 ## Planned Changes
 - Custom piedar options (Half done, not merged)

@@ -80,6 +80,8 @@
 # scoreboard players set treasure_wall bastion.settings -1
 # Spawner: (0: Disabled, 1: Enabled)
 # scoreboard players set treasure_spawner bastion.settings 1
+# Block Decay: (0: Vanilla, 1: High-Roll, 2: Low-Roll) (Cracked, gilded and missing block chances x1, x2 or x0.5)
+# scoreboard players set treasure_decay bastion.settings 0
 
 # For Housing:
 # Left Rampart: (0: Triple Chest, 1: Single Chest, 2: Ruin, -1: Random)
