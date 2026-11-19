@@ -22,6 +22,13 @@ execute if score selection chest_menu matches 6 if score items chest_menu matche
 execute if score selection chest_menu matches 6 if score items chest_menu matches 1 run scoreboard players remove sat_reset practice 1
 execute if score selection chest_menu matches 9 if score items chest_menu matches 2 run scoreboard players add #reverse_pick_throw practice 1
 execute if score selection chest_menu matches 9 if score items chest_menu matches 1 run scoreboard players remove #reverse_pick_throw practice 1
+execute if score selection chest_menu matches 10 if score items chest_menu matches 2 run scoreboard players add bastion_info bastion.settings 1
+execute if score selection chest_menu matches 10 if score items chest_menu matches 1 run scoreboard players remove bastion_info bastion.settings 1
+execute if score selection chest_menu matches 11 if score items chest_menu matches 2 run scoreboard players add bastion_boxes bastion.settings 1
+execute if score selection chest_menu matches 11 if score items chest_menu matches 1 run scoreboard players remove bastion_boxes bastion.settings 1
+execute if score selection chest_menu matches 12 if score items chest_menu matches 2 run scoreboard players add bastion_markers bastion.settings 1
+execute if score selection chest_menu matches 12 if score items chest_menu matches 1 run scoreboard players remove bastion_markers bastion.settings 1
+execute if score selection chest_menu matches 13 run function lbp_ext:info/give_wand
 execute if score selection chest_menu matches 7 unless score bastion settings matches 5 run scoreboard players set prev_settings_page chest_menu 4
 execute if score selection chest_menu matches 7 unless score bastion settings matches 5 run scoreboard players set page chest_menu 3
 execute if score selection chest_menu matches 8 run scoreboard players set page chest_menu 1
@@ -41,3 +48,14 @@ execute if score sat_reset practice matches 21.. run scoreboard players set sat_
 execute if score sat_reset practice matches ..-1 run scoreboard players set sat_reset practice 20
 execute if score #reverse_pick_throw practice matches 3.. run scoreboard players set #reverse_pick_throw practice 0
 execute if score #reverse_pick_throw practice matches ..-1 run scoreboard players set #reverse_pick_throw practice 2
+execute if score bastion_info bastion.settings matches 3.. run scoreboard players set bastion_info bastion.settings 0
+execute if score bastion_info bastion.settings matches ..-1 run scoreboard players set bastion_info bastion.settings 2
+execute if score bastion_boxes bastion.settings matches 2.. run scoreboard players set bastion_boxes bastion.settings 0
+execute if score bastion_boxes bastion.settings matches ..-1 run scoreboard players set bastion_boxes bastion.settings 1
+execute if score bastion_markers bastion.settings matches 2.. run scoreboard players set bastion_markers bastion.settings 0
+execute if score bastion_markers bastion.settings matches ..-1 run scoreboard players set bastion_markers bastion.settings 1
+
+# Show or clear the labels right away if a bastion is already out
+execute if score selection chest_menu matches 10 run function lbp_ext:info/render
+execute if score selection chest_menu matches 11 run function lbp_ext:info/render
+execute if score selection chest_menu matches 12 run function lbp_ext:info/render

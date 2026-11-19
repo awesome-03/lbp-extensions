@@ -18,6 +18,8 @@ execute if score ui practice matches 1 run function timer:display/show
 
 function practice:_start/silent_gamemode/unschedule
 execute as @a[gamemode=adventure] run function practice:_start/silent_gamemode/survival
+# Bounding Boxes are structure block outlines, which the game only draws for players in creative
+execute if score bastion_boxes bastion.settings matches 1 if score bastion_info bastion.settings matches 1.. run function practice:_start/silent_gamemode/creative
 
 function practice:_start/run_tick
 

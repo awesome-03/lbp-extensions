@@ -1,3 +1,6 @@
+# Undo Shuffle Wand swaps first, a rerun can rebuild over the bastion in place
+function lbp_ext:info/restore
+
 schedule clear practice:_start/run_tick
 schedule clear practice:_start/wait_for_movement/_standard/wait
 schedule clear practice:_start/clear_forceload

@@ -25,6 +25,20 @@ A datapack to extend the features of llama's bastion practice map.
 - Added an option to enable Ranked Guaranteed Loot (enabled by default):
   - Guarantees 5 obsidian and 3 iron across all bastion chests
   - Iron can be in the form of nuggets, and lower treasure is never intended
+- Added a Bastion Info option (Advanced Settings, or `/function #info:toggle`) that labels the bastion in game:
+  - Every piglin and hoglin spot in the outer parts, with what it rolls and how likely
+  - What each outer slot (ramparts, gaps, treasure center, ...) rolled, its odds, and how many spots it has
+  - Only the piece that's there gets labelled, use the Shuffle Wand to see the others
+  - 'Everything' also labels the spots inside the bastion
+- Added Bounding Boxes and Entity Markers options next to it, like the ones on bastionvisualizer.com, both only while Bastion Info is on:
+  - Bounding Boxes outlines every outer piece and every piece the wand can shuffle inside with a structure block's box, the structure block hidden inside a piece. The game only draws those in creative or spectator, so runs start in creative while it's on. Turning it off puts back the blocks they replaced
+  - Entity Markers puts a glowing block on every mob spot that shows through walls (orange piglin, red melee piglin, magenta hoglin)
+  - F3+N switches to spectator to fly through walls, the visualizer's Noclip
+- Added a Shuffle Wand (Advanced Settings) to swap pieces in place:
+  - Right-click a rampart, gap or treasure center for its next piece, sneak + right-click for the previous one
+  - The stalls in the stables, the housing units and center piece, and the treasure room's walls and corners go through their vanilla variants the same way. LBP builds those as one of 100 prebuilt layouts, which got matched back to vanilla's pieces
+  - Mobs, chests and labels come with the new piece, the rest of the bastion stays as it is
+  - Resetting brings back what LBP rolled, unless you save a state, then the shuffled layout is what resets go back to
 
 ## Planned Changes
 - Custom piedar options (Half done, not merged)

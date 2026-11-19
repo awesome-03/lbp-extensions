@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:blackstone",
+    "minecraft:polished_blackstone",
+    "minecraft:polished_blackstone_bricks",
+    "minecraft:cracked_polished_blackstone_bricks",
+    "minecraft:chiseled_polished_blackstone",
+    "minecraft:gilded_blackstone",
+    "minecraft:basalt",
+    "minecraft:polished_basalt",
+    "minecraft:gold_block",
+    "minecraft:magma_block",
+    "minecraft:netherrack",
+    "minecraft:quartz_block",
+    "minecraft:smooth_quartz",
+    "minecraft:structure_block"
+  ]
+}

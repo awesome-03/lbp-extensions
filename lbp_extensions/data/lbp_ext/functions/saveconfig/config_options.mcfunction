@@ -105,5 +105,14 @@
 # ID Piglins: (0: Disabled, 1: Enabled) (Tags piglins with their parent structure name)
 # scoreboard players set id_piglins bastion.settings 1
 
+# Bastion Info: (0: Disabled, 1: Outer Parts, 2: Everything) (Labels every mob spot and what each outer slot rolled, with odds)
+# scoreboard players set bastion_info bastion.settings 0
+
+# Bounding Boxes: (0: Disabled, 1: Enabled) (Structure block outlines of the outer pieces, stalls and housing units, runs start in creative to show them, needs Bastion Info on)
+# scoreboard players set bastion_boxes bastion.settings 0
+
+# Entity Markers: (0: Disabled, 1: Enabled) (Glowing marker on every mob spot, seen through walls, needs Bastion Info on)
+# scoreboard players set bastion_markers bastion.settings 0
+
 # Reset Saturation: (0: Disabled, 1: Enabled)
 # scoreboard players set sat_reset practice 1
