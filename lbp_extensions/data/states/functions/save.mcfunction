@@ -4,6 +4,9 @@ gamerule sendCommandFeedback false
 # 1. Teleport selected spawnpoint to player position and rotation
 tp @e[type=area_effect_cloud, tag=selected_spawnpoint, sort=nearest, limit=1] ~ ~ ~ ~ ~
 
+# Shuffled slots are part of the state now, so resets keep them
+function lbp_ext:info/shuffle/bake
+
 # 2. Enable rerun_terrain so resets reload this state
 scoreboard players set rerun_terrain settings 0
 

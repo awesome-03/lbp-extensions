@@ -80,6 +80,8 @@
 # scoreboard players set treasure_wall bastion.settings -1
 # Spawner: (0: Disabled, 1: Enabled)
 # scoreboard players set treasure_spawner bastion.settings 1
+# Block Decay: (-1: A Lot, 0: Vanilla, 1: A Little) (Cracked, gilded and missing block chances x1, x2 or x0.5)
+# scoreboard players set treasure_decay bastion.settings 0
 
 # For Housing:
 # Left Rampart: (0: Triple Chest, 1: Single Chest, 2: Ruin, -1: Random)
@@ -104,6 +106,15 @@
 
 # ID Piglins: (0: Disabled, 1: Enabled) (Tags piglins with their parent structure name)
 # scoreboard players set id_piglins bastion.settings 1
+
+# Bastion Info: (0: Disabled, 1: Outer Parts, 2: Everything) (Labels every mob spot and what each outer slot rolled, with odds)
+# scoreboard players set bastion_info bastion.settings 0
+
+# Bounding Boxes: (0: Disabled, 1: Enabled) (Structure block outlines of the outer pieces, stalls and housing units, runs start in creative to show them, needs Bastion Info on)
+# scoreboard players set bastion_boxes bastion.settings 0
+
+# Entity Markers: (0: Disabled, 1: Enabled) (Glowing marker on every mob spot, seen through walls, needs Bastion Info on)
+# scoreboard players set bastion_markers bastion.settings 0
 
 # Reset Saturation: (0: Disabled, 1: Enabled)
 # scoreboard players set sat_reset practice 1

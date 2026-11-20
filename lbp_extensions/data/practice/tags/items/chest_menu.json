@@ -4,6 +4,11 @@
     "red_carpet",
     "fire_charge",
     "diamond",
-    "chest_minecart"
+    "chest_minecart",
+    "map",
+    "structure_block",
+    "glowstone_dust",
+    "carrot_on_a_stick",
+    "gilded_blackstone"
   ]
 }

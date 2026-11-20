@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{lbp_shuffle:1b,Enchantments:[{}],HideFlags:1,display:{Name:'{"text":"Shuffle Wand","color":"yellow","italic":false}',Lore:['{"text":"Right-click a piece to swap it","color":"gray","italic":false}','{"text":"Sneak to go back","color":"gray","italic":false}']}}

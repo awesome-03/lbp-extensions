@@ -23,3 +23,7 @@ execute store success score bool chest_menu run clear @s #practice:chest_menu{me
 execute if score bool chest_menu matches 1 run scoreboard players set selection chest_menu 10
 execute store success score bool chest_menu run clear @s #practice:chest_menu{menu:1,selection:11} 0
 execute if score bool chest_menu matches 1 run scoreboard players set selection chest_menu 11
+execute store success score bool chest_menu run clear @s #practice:chest_menu{menu:1,selection:12} 0
+execute if score bool chest_menu matches 1 run scoreboard players set selection chest_menu 12
+execute store success score bool chest_menu run clear @s #practice:chest_menu{menu:1,selection:13} 0
+execute if score bool chest_menu matches 1 run scoreboard players set selection chest_menu 13

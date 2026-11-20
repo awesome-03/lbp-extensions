@@ -100,6 +100,14 @@ execute unless score id_piglins bastion.settings = id_piglins bastion.settings r
 # Ranked loot
 execute unless score guarantee_loot bastion.settings = guarantee_loot bastion.settings run scoreboard players set guarantee_loot bastion.settings 1
 
+# Bastion info
+execute unless score bastion_info bastion.settings = bastion_info bastion.settings run scoreboard players set bastion_info bastion.settings 0
+execute unless score bastion_boxes bastion.settings = bastion_boxes bastion.settings run scoreboard players set bastion_boxes bastion.settings 0
+execute unless score bastion_markers bastion.settings = bastion_markers bastion.settings run scoreboard players set bastion_markers bastion.settings 0
+
+# Treasure decay
+execute unless score treasure_decay bastion.settings = treasure_decay bastion.settings run scoreboard players set treasure_decay bastion.settings 0
+
 scoreboard players set running bastion.temp 0
 scoreboard players set #death_respawn_rerun practice 0
 scoreboard players set #silence_feedback practice 0

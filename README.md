@@ -32,9 +32,10 @@ A datapack to extend the features of llama's bastion practice map.
 - Added an option to enable Ranked Guaranteed Loot (enabled by default):
   - Guarantees 5 obsidian and 3 iron across all bastion chests
   - Iron can be in the form of nuggets, and lower treasure is never intended
-- Ways to access some features using commands in runs:
-  - `/function #states:save` -> Does the same thing as crouch throwing an axe to save state
-  - `/function #mode:toggle` -> Toggles between 'Normal' and 'Reversed' modes
+- Added a Bastion Info option (Advanced Settings, or `/function #info:toggle`) that labels the bastion in game, similar to Llama's bastionvisualizer.com
+- Added a Block Decay option to the treasure settings: A Lot (decay chances x2), Vanilla or A Little (x0.5)
+  - Covers cracked bricks, gilded blackstone, air decay.
+  - The top rampart's holes get likelier the higher up they are, instead of one flat chance (vanilla parity)
 
 ## Planned Changes
 - Custom piedar options (Half done, not merged)

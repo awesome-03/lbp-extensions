@@ -10,3 +10,5 @@ execute at @e[type=area_effect_cloud, tag=chunk_aligned] at @e[type=area_effect_
 
 # Activate lava fix for bridge
 execute if score bridge_lava_fix bastion.settings matches 1 if score bastion_type bastion.temp matches 1 run function bastionbuilder:internal/lava_fix/lava_fix
+
+function lbp_ext:info/post_place
