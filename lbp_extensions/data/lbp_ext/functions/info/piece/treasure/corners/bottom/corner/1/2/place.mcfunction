@@ -2,9 +2,9 @@ clone ~ ~ ~ ~ ~1 ~ ~ 254 ~
 setblock ~ ~ ~ structure_block{mode:"LOAD",rotation:"CLOCKWISE_180",name:"lbp_ext:pieces/treasure/corners/bottom/corner/1"}
 setblock ~ ~1 ~ redstone_block
 fill ~ ~ ~ ~ ~1 ~ air
+execute if score treasure_decay bastion.settings matches -1 run setblock ~ ~ ~ structure_block{mode:"LOAD",rotation:"CLOCKWISE_180",integrity:0.7f,name:"lbp_ext:pieces/treasure/corners/bottom/corner/1_0"}
 execute if score treasure_decay bastion.settings matches 0 run setblock ~ ~ ~ structure_block{mode:"LOAD",rotation:"CLOCKWISE_180",integrity:0.35f,name:"lbp_ext:pieces/treasure/corners/bottom/corner/1_0"}
-execute if score treasure_decay bastion.settings matches 1 run setblock ~ ~ ~ structure_block{mode:"LOAD",rotation:"CLOCKWISE_180",integrity:0.7f,name:"lbp_ext:pieces/treasure/corners/bottom/corner/1_0"}
-execute if score treasure_decay bastion.settings matches 2 run setblock ~ ~ ~ structure_block{mode:"LOAD",rotation:"CLOCKWISE_180",integrity:0.175f,name:"lbp_ext:pieces/treasure/corners/bottom/corner/1_0"}
+execute if score treasure_decay bastion.settings matches 1 run setblock ~ ~ ~ structure_block{mode:"LOAD",rotation:"CLOCKWISE_180",integrity:0.175f,name:"lbp_ext:pieces/treasure/corners/bottom/corner/1_0"}
 setblock ~ ~1 ~ redstone_block
 setblock ~ ~ ~ minecraft:polished_blackstone_bricks
 setblock ~ ~1 ~ minecraft:polished_blackstone_bricks

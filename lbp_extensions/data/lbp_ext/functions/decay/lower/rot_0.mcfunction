@@ -208,42 +208,42 @@ fill ~ ~-2 ~ ~ ~-1 ~ air
 setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/outer",rotation:"NONE",posX:0,posY:1,posZ:0}
 setblock ~ ~-2 ~ redstone_block
 fill ~ ~-2 ~ ~ ~-1 ~ air
+execute if score treasure_decay bastion.settings matches -1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/outer_2",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.6f}
 execute if score treasure_decay bastion.settings matches 0 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/outer_2",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.3f}
-execute if score treasure_decay bastion.settings matches 1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/outer_2",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.6f}
-execute if score treasure_decay bastion.settings matches 2 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/outer_2",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.15f}
+execute if score treasure_decay bastion.settings matches 1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/outer_2",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.15f}
 execute store result block ~ ~-1 ~ seed long 1 run scoreboard players add #decay lbp_info 1
 setblock ~ ~-2 ~ redstone_block
 fill ~ ~-2 ~ ~ ~-1 ~ air
+execute if score treasure_decay bastion.settings matches -1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/outer_1",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:1f}
 execute if score treasure_decay bastion.settings matches 0 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/outer_1",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.5f}
-execute if score treasure_decay bastion.settings matches 1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/outer_1",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:1f}
-execute if score treasure_decay bastion.settings matches 2 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/outer_1",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.25f}
+execute if score treasure_decay bastion.settings matches 1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/outer_1",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.25f}
 execute store result block ~ ~-1 ~ seed long 1 run scoreboard players add #decay lbp_info 1
 setblock ~ ~-2 ~ redstone_block
 fill ~ ~-2 ~ ~ ~-1 ~ air
+execute if score treasure_decay bastion.settings matches -1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/outer_0",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.02f}
 execute if score treasure_decay bastion.settings matches 0 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/outer_0",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.01f}
-execute if score treasure_decay bastion.settings matches 1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/outer_0",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.02f}
-execute if score treasure_decay bastion.settings matches 2 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/outer_0",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.005f}
+execute if score treasure_decay bastion.settings matches 1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/outer_0",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.005f}
 execute store result block ~ ~-1 ~ seed long 1 run scoreboard players add #decay lbp_info 1
 setblock ~ ~-2 ~ redstone_block
 fill ~ ~-2 ~ ~ ~-1 ~ air
 setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/roof",rotation:"NONE",posX:0,posY:1,posZ:0}
 setblock ~ ~-2 ~ redstone_block
 fill ~ ~-2 ~ ~ ~-1 ~ air
+execute if score treasure_decay bastion.settings matches -1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/roof_2",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.6f}
 execute if score treasure_decay bastion.settings matches 0 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/roof_2",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.3f}
-execute if score treasure_decay bastion.settings matches 1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/roof_2",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.6f}
-execute if score treasure_decay bastion.settings matches 2 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/roof_2",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.15f}
+execute if score treasure_decay bastion.settings matches 1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/roof_2",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.15f}
 execute store result block ~ ~-1 ~ seed long 1 run scoreboard players add #decay lbp_info 1
 setblock ~ ~-2 ~ redstone_block
 fill ~ ~-2 ~ ~ ~-1 ~ air
+execute if score treasure_decay bastion.settings matches -1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/roof_1",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.3f}
 execute if score treasure_decay bastion.settings matches 0 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/roof_1",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.15f}
-execute if score treasure_decay bastion.settings matches 1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/roof_1",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.3f}
-execute if score treasure_decay bastion.settings matches 2 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/roof_1",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.075f}
+execute if score treasure_decay bastion.settings matches 1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/roof_1",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.075f}
 execute store result block ~ ~-1 ~ seed long 1 run scoreboard players add #decay lbp_info 1
 setblock ~ ~-2 ~ redstone_block
 fill ~ ~-2 ~ ~ ~-1 ~ air
+execute if score treasure_decay bastion.settings matches -1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/roof_0",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.6f}
 execute if score treasure_decay bastion.settings matches 0 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/roof_0",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.3f}
-execute if score treasure_decay bastion.settings matches 1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/roof_0",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.6f}
-execute if score treasure_decay bastion.settings matches 2 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/roof_0",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.15f}
+execute if score treasure_decay bastion.settings matches 1 run setblock ~ ~-1 ~ structure_block{mode:"LOAD",name:"lbp_ext:decay/shell/roof_0",rotation:"NONE",posX:0,posY:1,posZ:0,integrity:0.15f}
 execute store result block ~ ~-1 ~ seed long 1 run scoreboard players add #decay lbp_info 1
 setblock ~ ~-2 ~ redstone_block
 clone ~ 252 ~ ~ 253 ~ ~ ~-2 ~

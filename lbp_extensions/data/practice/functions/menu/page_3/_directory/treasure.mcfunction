@@ -25,5 +25,5 @@ execute if score treasure_spawner bastion.settings matches 2.. run scoreboard pl
 execute if score treasure_spawner bastion.settings matches ..-1 run scoreboard players set treasure_spawner bastion.settings 1
 execute if score treasure_wall bastion.settings matches 4.. run scoreboard players set treasure_wall bastion.settings -1
 execute if score treasure_wall bastion.settings matches ..-2 run scoreboard players set treasure_wall bastion.settings 3
-execute if score treasure_decay bastion.settings matches 3.. run scoreboard players set treasure_decay bastion.settings 0
-execute if score treasure_decay bastion.settings matches ..-1 run scoreboard players set treasure_decay bastion.settings 2
+execute if score treasure_decay bastion.settings matches 2.. run scoreboard players set treasure_decay bastion.settings -1
+execute if score treasure_decay bastion.settings matches ..-2 run scoreboard players set treasure_decay bastion.settings 1
