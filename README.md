@@ -2,6 +2,13 @@
 
 A datapack to extend the features of llama's bastion practice map.
 
+## How to use
+
+1. Download the latest release [here](https://github.com/awesome-03/lbp-extensions/releases/latest/download/lbp_extensions.zip/)
+2. Open your instance folder, click the `saves` folder and find your bastion map folder
+3. Extract the zip you downloaded and put it in your world's `datapacks` folder
+4. Join the world and run the `/reload` command
+
 ## Features
 
 - Right click menu items to go back
@@ -18,35 +25,39 @@ A datapack to extend the features of llama's bastion practice map.
   - Normal → throw pickaxe = lobby, crouch throw = rerun
   - Reversed → throw pickaxe = rerun, crouch throw = lobby
   - Confirm → show a chat message you can click on to rerun or go back to lobby
-- Added save states using the `/function #states:save` command:
+- Added save states by crouch throwing an axe:
   - 'Rerun' (shift throw pick on Normal mode) to return to the exact saved state
   - Dying puts you back in the saved state
   - Reset the run to exit the saved state
 - Added an option to enable Ranked Guaranteed Loot (enabled by default):
   - Guarantees 5 obsidian and 3 iron across all bastion chests
   - Iron can be in the form of nuggets, and lower treasure is never intended
-- Added a Bastion Info option (Advanced Settings, or `/function #info:toggle`) that labels the bastion in game:
-  - Every piglin and hoglin spot in the outer parts, with what it rolls and how likely
-  - What each outer slot (ramparts, gaps, treasure center, ...) rolled, its odds, and how many spots it has
-  - Only the piece that's there gets labelled, use the Shuffle Wand to see the others
-  - 'Everything' also labels the spots inside the bastion
-- Added Bounding Boxes and Entity Markers options next to it, like the ones on bastionvisualizer.com, both only while Bastion Info is on:
-  - Bounding Boxes outlines every outer piece and every piece the wand can shuffle inside with a structure block's box, the structure block hidden inside a piece. The game only draws those in creative or spectator, so runs start in creative while it's on. Turning it off puts back the blocks they replaced
-  - Entity Markers puts a glowing block on every mob spot that shows through walls (orange piglin, red melee piglin, magenta hoglin)
-  - F3+N switches to spectator to fly through walls, the visualizer's Noclip
-- Added a Shuffle Wand (Advanced Settings) to swap pieces in place:
-  - Right-click a rampart, gap or treasure center for its next piece, sneak + right-click for the previous one
-  - The stalls in the stables, the housing units and center piece, and the treasure room's walls and corners go through their vanilla variants the same way. LBP builds those as one of 100 prebuilt layouts, which got matched back to vanilla's pieces
-  - Mobs, chests and labels come with the new piece, the rest of the bastion stays as it is
-  - Resetting brings back what LBP rolled, unless you save a state, then the shuffled layout is what resets go back to
+- Added a Bastion Info option (Advanced Settings, or `/function #info:toggle`) that labels the bastion in game, similar to Llama's bastionvisualizer.com
 - Added a Block Decay option to the treasure settings: A Lot (decay chances x2), Vanilla or A Little (x0.5)
-  - Covers cracked bricks, gilded blackstone, missing blocks in the roof, outer walls and top ramparts, and the magma and gold blocks that turn into bricks
-  - LBP saves the treasure room's decay with each of its 100 layouts, so the same layout always had the same gilded blackstone. The room's decay is now rolled again every run with vanilla's rules
-  - The top rampart's holes get likelier the higher up they are, like in vanilla, instead of one flat chance
+  - Covers cracked bricks, gilded blackstone, air decay.
+  - The top rampart's holes get likelier the higher up they are, instead of one flat chance (vanilla parity)
 
 ## Planned Changes
 - Custom piedar options (Half done, not merged)
 - Additional run info after a run is done (e.g. fire res count)
+- Helper commands:
+  - Make mode toggle able to switch to Confirm mode
+  - Command to get crossbow, sword, and paralyzed piglin spawn eggs
+  - Command to give potion (?) to spawn a pig on a specific block (?) for testing late pig states
+  - Command to be able to one shot piglins with a weapon or punch (?)
+  - Command to not let you reset at all so you don't accidentally get rid of a savestate
+- Option to auto savestate at load so when you die it doesn't go to a different bastion
+- Option to revoke pre-bastion advancements on run start to simulate advancement toasts
+- Reorganize the function tags, add/remove some to easily change things mid run without the GUI
+
+**Fixes:**
+- Remove the body of the dead duplicated piglins so they don't appear
+- A bug causing you to stay in creative after resetting to savestate while tick warp is enabled
+- Verify that the piglin aggro timers don't get messed up by savestates (I forgot if I did this or not)
+
+## SUGGESTIONS
+
+If you have any suggestions, you can make an issue here or ping me on discord with them.
 
 ### Disclaimer
 

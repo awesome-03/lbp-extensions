@@ -1,5 +1,6 @@
 effect clear @a fire_resistance
 
+execute as @e[tag=bastion_mob] run data merge entity @s {Motion:[0.0d,0.0d,0.0d]}
 execute as @e[tag=bastion_mob] run data merge entity @s {NoAI: 0, Silent:0}
 
 # Restore saved items' pickup delay and clean up empty Item.tag compounds so items stack normally in inventory

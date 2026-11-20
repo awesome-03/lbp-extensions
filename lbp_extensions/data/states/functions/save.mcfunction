@@ -17,6 +17,8 @@ scoreboard players set #has_state_inventory practice 1
 # 4. Save the bastion terrain, mobs, and ground items in structure blocks (preserving exact native item tags)
 execute as @e[type=item] run tag @s add saved_item
 tag @e[type=!player,type=!area_effect_cloud,type=!armor_stand,type=!item,tag=!bastion_mob] add bastion_mob
+execute as @e[tag=bastion_mob] run data merge entity @s {Motion:[0.0d,0.0d,0.0d]}
+function lbp_ext:kill_duplicate_mobs
 
 # Preserve item pickup delay before saving
 execute as @e[type=item, tag=saved_item] run data modify entity @s Item.tag.saved_pickup_delay set from entity @s PickupDelay

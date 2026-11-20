@@ -16,6 +16,7 @@ difficulty easy
 function practice:_start/silent_gamemode/adventure
 
 team join no_collison @a
+team join no_collison @e[type=!player,type=!area_effect_cloud,type=!armor_stand,type=!item]
 
 effect give @a fire_resistance 1000000 0 true
 effect give @a jump_boost 1 255 true
@@ -67,6 +68,8 @@ execute if score rerun_terrain settings matches 1 at @e[type=area_effect_cloud, 
 execute if score stables_guarantee_good_gap bastion.settings matches 0 run function practice:_start/stables_gap_restore
 execute if score stables_guarantee_triple bastion.settings matches 1 run function practice:_start/stables_rampart_restore
 execute if score bridge_guarantee_triple bastion.settings matches 1 run function practice:_start/bridge_restore
+
+function lbp_ext:kill_duplicate_mobs
 
 
 
