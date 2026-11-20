@@ -6,127 +6,127 @@ scoreboard players set #decay_base_4 lbp_info 4
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_2 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_2 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/corners/bottom/corner_0/3_2_0_6/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/corners/bottom/corner_1/0_2_0_2/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~6 ~ ~-2 run function lbp_ext:decay/piece/corners/bottom/corner_0/2
+execute if score #decay_choice lbp_info matches 1 positioned ~2 ~ ~-2 run function lbp_ext:decay/piece/corners/bottom/corner_1/3
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_4 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_4 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/walls/bottom/wall_0/0_2_0_7/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/walls/bottom/wall_2/0_2_0_7/rot_270
-execute if score #decay_choice lbp_info matches 2 run function lbp_ext:decay/piece/walls/bottom/wall_3/0_2_0_7/rot_270
-execute if score #decay_choice lbp_info matches 3 run function lbp_ext:decay/piece/walls/bottom/wall_1/0_2_0_7/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~7 ~ ~-2 run function lbp_ext:decay/piece/walls/bottom/wall_0/3
+execute if score #decay_choice lbp_info matches 1 positioned ~7 ~ ~-2 run function lbp_ext:decay/piece/walls/bottom/wall_2/3
+execute if score #decay_choice lbp_info matches 2 positioned ~7 ~ ~-2 run function lbp_ext:decay/piece/walls/bottom/wall_3/3
+execute if score #decay_choice lbp_info matches 3 positioned ~7 ~ ~-2 run function lbp_ext:decay/piece/walls/bottom/wall_1/3
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_2 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_2 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/corners/bottom/corner_1/3_2_0_35/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/corners/bottom/corner_0/2_6_0_35/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~35 ~ ~-2 run function lbp_ext:decay/piece/corners/bottom/corner_1/2
+execute if score #decay_choice lbp_info matches 1 positioned ~35 ~ ~-6 run function lbp_ext:decay/piece/corners/bottom/corner_0/1
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_2 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_2 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/corners/middle/corner_1/1_6_16_2/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/corners/middle/corner_0/1_6_16_2/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~2 ~ ~-6 run function lbp_ext:decay/piece/corners/middle/corner_1/0
+execute if score #decay_choice lbp_info matches 1 positioned ~2 ~ ~-6 run function lbp_ext:decay/piece/corners/middle/corner_0/0
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_3 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_3 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/walls/mid/wall_2/0_2_16_7/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/walls/mid/wall_1/0_2_16_7/rot_270
-execute if score #decay_choice lbp_info matches 2 run function lbp_ext:decay/piece/walls/mid/wall_0/0_2_16_7/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~7 ~ ~-2 run function lbp_ext:decay/piece/walls/mid/wall_2/3
+execute if score #decay_choice lbp_info matches 1 positioned ~7 ~ ~-2 run function lbp_ext:decay/piece/walls/mid/wall_1/3
+execute if score #decay_choice lbp_info matches 2 positioned ~7 ~ ~-2 run function lbp_ext:decay/piece/walls/mid/wall_0/3
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_2 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_2 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/corners/middle/corner_1/0_2_16_31/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/corners/middle/corner_0/0_2_16_31/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~31 ~ ~-2 run function lbp_ext:decay/piece/corners/middle/corner_1/3
+execute if score #decay_choice lbp_info matches 1 positioned ~31 ~ ~-2 run function lbp_ext:decay/piece/corners/middle/corner_0/3
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_2 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_2 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/corners/top/corner_0/0_2_31_2/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/corners/top/corner_1/0_2_31_2/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~2 ~ ~-2 run function lbp_ext:decay/piece/corners/top/corner_0/3
+execute if score #decay_choice lbp_info matches 1 positioned ~2 ~ ~-2 run function lbp_ext:decay/piece/corners/top/corner_1/3
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_2 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_2 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/walls/top/wall_0/0_2_31_7/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/walls/top/wall_1/0_2_31_7/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~7 ~ ~-2 run function lbp_ext:decay/piece/walls/top/wall_0/3
+execute if score #decay_choice lbp_info matches 1 positioned ~7 ~ ~-2 run function lbp_ext:decay/piece/walls/top/wall_1/3
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_2 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_2 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/corners/top/corner_1/3_2_31_35/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/corners/top/corner_0/3_2_31_35/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~35 ~ ~-2 run function lbp_ext:decay/piece/corners/top/corner_1/2
+execute if score #decay_choice lbp_info matches 1 positioned ~35 ~ ~-2 run function lbp_ext:decay/piece/corners/top/corner_0/2
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_4 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_4 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/walls/bottom/wall_1/1_30_0_2/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/walls/bottom/wall_2/1_30_0_2/rot_270
-execute if score #decay_choice lbp_info matches 2 run function lbp_ext:decay/piece/walls/bottom/wall_0/1_30_0_2/rot_270
-execute if score #decay_choice lbp_info matches 3 run function lbp_ext:decay/piece/walls/bottom/wall_3/1_30_0_2/rot_270
-function lbp_ext:decay/piece/bases/lava_basin/0_7_0_7/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~2 ~ ~-30 run function lbp_ext:decay/piece/walls/bottom/wall_1/0
+execute if score #decay_choice lbp_info matches 1 positioned ~2 ~ ~-30 run function lbp_ext:decay/piece/walls/bottom/wall_2/0
+execute if score #decay_choice lbp_info matches 2 positioned ~2 ~ ~-30 run function lbp_ext:decay/piece/walls/bottom/wall_0/0
+execute if score #decay_choice lbp_info matches 3 positioned ~2 ~ ~-30 run function lbp_ext:decay/piece/walls/bottom/wall_3/0
+execute positioned ~7 ~ ~-7 run function lbp_ext:decay/piece/bases/lava_basin/3
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_4 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_4 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/walls/bottom/wall_3/3_7_0_35/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/walls/bottom/wall_1/3_7_0_35/rot_270
-execute if score #decay_choice lbp_info matches 2 run function lbp_ext:decay/piece/walls/bottom/wall_0/3_7_0_35/rot_270
-execute if score #decay_choice lbp_info matches 3 run function lbp_ext:decay/piece/walls/bottom/wall_2/3_7_0_35/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~35 ~ ~-7 run function lbp_ext:decay/piece/walls/bottom/wall_3/2
+execute if score #decay_choice lbp_info matches 1 positioned ~35 ~ ~-7 run function lbp_ext:decay/piece/walls/bottom/wall_1/2
+execute if score #decay_choice lbp_info matches 2 positioned ~35 ~ ~-7 run function lbp_ext:decay/piece/walls/bottom/wall_0/2
+execute if score #decay_choice lbp_info matches 3 positioned ~35 ~ ~-7 run function lbp_ext:decay/piece/walls/bottom/wall_2/2
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_3 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_3 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/walls/mid/wall_0/1_30_16_2/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/walls/mid/wall_1/1_30_16_2/rot_270
-execute if score #decay_choice lbp_info matches 2 run function lbp_ext:decay/piece/walls/mid/wall_2/1_30_16_2/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~2 ~ ~-30 run function lbp_ext:decay/piece/walls/mid/wall_0/0
+execute if score #decay_choice lbp_info matches 1 positioned ~2 ~ ~-30 run function lbp_ext:decay/piece/walls/mid/wall_1/0
+execute if score #decay_choice lbp_info matches 2 positioned ~2 ~ ~-30 run function lbp_ext:decay/piece/walls/mid/wall_2/0
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_3 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_3 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/walls/mid/wall_0/3_7_16_35/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/walls/mid/wall_2/3_7_16_35/rot_270
-execute if score #decay_choice lbp_info matches 2 run function lbp_ext:decay/piece/walls/mid/wall_1/3_7_16_35/rot_270
-function lbp_ext:decay/piece/walls/top/main_entrance/1_30_31_2/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~35 ~ ~-7 run function lbp_ext:decay/piece/walls/mid/wall_0/2
+execute if score #decay_choice lbp_info matches 1 positioned ~35 ~ ~-7 run function lbp_ext:decay/piece/walls/mid/wall_2/2
+execute if score #decay_choice lbp_info matches 2 positioned ~35 ~ ~-7 run function lbp_ext:decay/piece/walls/mid/wall_1/2
+execute positioned ~2 ~ ~-30 run function lbp_ext:decay/piece/walls/top/main_entrance/0
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_2 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_2 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/walls/top/wall_0/3_7_31_35/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/walls/top/wall_1/3_7_31_35/rot_270
-function lbp_ext:decay/piece/stairs/lower_stairs/0_18_11_7/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~35 ~ ~-7 run function lbp_ext:decay/piece/walls/top/wall_0/2
+execute if score #decay_choice lbp_info matches 1 positioned ~35 ~ ~-7 run function lbp_ext:decay/piece/walls/top/wall_1/2
+execute positioned ~7 ~ ~-18 run function lbp_ext:decay/piece/stairs/lower_stairs/3
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_2 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_2 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/corners/bottom/corner_0/0_31_0_2/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/corners/bottom/corner_1/1_35_0_2/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~2 ~ ~-31 run function lbp_ext:decay/piece/corners/bottom/corner_0/3
+execute if score #decay_choice lbp_info matches 1 positioned ~2 ~ ~-35 run function lbp_ext:decay/piece/corners/bottom/corner_1/0
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_4 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_4 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/walls/bottom/wall_0/2_35_0_30/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/walls/bottom/wall_3/2_35_0_30/rot_270
-execute if score #decay_choice lbp_info matches 2 run function lbp_ext:decay/piece/walls/bottom/wall_1/2_35_0_30/rot_270
-execute if score #decay_choice lbp_info matches 3 run function lbp_ext:decay/piece/walls/bottom/wall_2/2_35_0_30/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~30 ~ ~-35 run function lbp_ext:decay/piece/walls/bottom/wall_0/1
+execute if score #decay_choice lbp_info matches 1 positioned ~30 ~ ~-35 run function lbp_ext:decay/piece/walls/bottom/wall_3/1
+execute if score #decay_choice lbp_info matches 2 positioned ~30 ~ ~-35 run function lbp_ext:decay/piece/walls/bottom/wall_1/1
+execute if score #decay_choice lbp_info matches 3 positioned ~30 ~ ~-35 run function lbp_ext:decay/piece/walls/bottom/wall_2/1
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_2 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_2 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/corners/bottom/corner_0/1_35_0_31/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/corners/bottom/corner_1/2_35_0_35/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~31 ~ ~-35 run function lbp_ext:decay/piece/corners/bottom/corner_0/0
+execute if score #decay_choice lbp_info matches 1 positioned ~35 ~ ~-35 run function lbp_ext:decay/piece/corners/bottom/corner_1/1
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_2 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_2 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/corners/middle/corner_1/2_35_16_6/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/corners/middle/corner_0/2_35_16_6/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~6 ~ ~-35 run function lbp_ext:decay/piece/corners/middle/corner_1/1
+execute if score #decay_choice lbp_info matches 1 positioned ~6 ~ ~-35 run function lbp_ext:decay/piece/corners/middle/corner_0/1
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_3 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_3 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/walls/mid/wall_0/2_35_16_30/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/walls/mid/wall_1/2_35_16_30/rot_270
-execute if score #decay_choice lbp_info matches 2 run function lbp_ext:decay/piece/walls/mid/wall_2/2_35_16_30/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~30 ~ ~-35 run function lbp_ext:decay/piece/walls/mid/wall_0/1
+execute if score #decay_choice lbp_info matches 1 positioned ~30 ~ ~-35 run function lbp_ext:decay/piece/walls/mid/wall_1/1
+execute if score #decay_choice lbp_info matches 2 positioned ~30 ~ ~-35 run function lbp_ext:decay/piece/walls/mid/wall_2/1
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_2 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_2 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/corners/middle/corner_0/3_31_16_35/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/corners/middle/corner_1/3_31_16_35/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~35 ~ ~-31 run function lbp_ext:decay/piece/corners/middle/corner_0/2
+execute if score #decay_choice lbp_info matches 1 positioned ~35 ~ ~-31 run function lbp_ext:decay/piece/corners/middle/corner_1/2
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_2 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_2 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/corners/top/corner_1/1_35_31_2/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/corners/top/corner_0/1_35_31_2/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~2 ~ ~-35 run function lbp_ext:decay/piece/corners/top/corner_1/0
+execute if score #decay_choice lbp_info matches 1 positioned ~2 ~ ~-35 run function lbp_ext:decay/piece/corners/top/corner_0/0
 scoreboard players operation #decay_choice lbp_info = #decay_layout lbp_info
 scoreboard players operation #decay_choice lbp_info %= #decay_base_2 lbp_info
 scoreboard players operation #decay_layout lbp_info /= #decay_base_2 lbp_info
-execute if score #decay_choice lbp_info matches 0 run function lbp_ext:decay/piece/walls/top/wall_1/2_35_31_30/rot_270
-execute if score #decay_choice lbp_info matches 1 run function lbp_ext:decay/piece/walls/top/wall_0/2_35_31_30/rot_270
-execute if score #decay_layout lbp_info matches 0 run function lbp_ext:decay/piece/corners/top/corner_0/2_35_31_35/rot_270
-execute if score #decay_layout lbp_info matches 1 run function lbp_ext:decay/piece/corners/top/corner_1/2_35_31_35/rot_270
+execute if score #decay_choice lbp_info matches 0 positioned ~30 ~ ~-35 run function lbp_ext:decay/piece/walls/top/wall_1/1
+execute if score #decay_choice lbp_info matches 1 positioned ~30 ~ ~-35 run function lbp_ext:decay/piece/walls/top/wall_0/1
+execute if score #decay_layout lbp_info matches 0 positioned ~35 ~ ~-35 run function lbp_ext:decay/piece/corners/top/corner_0/1
+execute if score #decay_layout lbp_info matches 1 positioned ~35 ~ ~-35 run function lbp_ext:decay/piece/corners/top/corner_1/1

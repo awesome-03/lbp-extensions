@@ -3,6 +3,18 @@
 scoreboard players operation #decay lbp_info = current bastion.rng
 scoreboard players set #decay_mul lbp_info 1664525
 scoreboard players operation #decay lbp_info *= #decay_mul lbp_info
+scoreboard players set #decay_rule_0 lbp_info 0
+execute if score treasure_decay bastion.settings matches -1 run scoreboard players set #decay_rule_0 lbp_info 700000
+execute if score treasure_decay bastion.settings matches 0 run scoreboard players set #decay_rule_0 lbp_info 350000
+execute if score treasure_decay bastion.settings matches 1 run scoreboard players set #decay_rule_0 lbp_info 175000
+scoreboard players set #decay_rule_1 lbp_info 0
+execute if score treasure_decay bastion.settings matches -1 run scoreboard players set #decay_rule_1 lbp_info 200000
+execute if score treasure_decay bastion.settings matches 0 run scoreboard players set #decay_rule_1 lbp_info 100000
+execute if score treasure_decay bastion.settings matches 1 run scoreboard players set #decay_rule_1 lbp_info 50000
+scoreboard players set #decay_rule_2 lbp_info 0
+execute if score treasure_decay bastion.settings matches -1 run scoreboard players set #decay_rule_2 lbp_info 20000
+execute if score treasure_decay bastion.settings matches 0 run scoreboard players set #decay_rule_2 lbp_info 10000
+execute if score treasure_decay bastion.settings matches 1 run scoreboard players set #decay_rule_2 lbp_info 5000
 clone ~ ~-2 ~ ~ ~-1 ~ ~ 252 ~
 function lbp_ext:decay/lower/select
 execute if score #decay_layout lbp_info matches 0.. run function lbp_ext:decay/lower/apply/rot_270

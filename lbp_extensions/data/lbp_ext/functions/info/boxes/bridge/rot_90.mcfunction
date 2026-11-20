@@ -3,136 +3,136 @@
 
 # Entrance Base
 scoreboard players set #hid lbp_info 0
-execute if score #hid lbp_info matches 0 if block ~-29 ~16 ~2 #lbp_ext:opaque if block ~-31 ~16 ~2 #lbp_ext:opaque if block ~-30 ~17 ~2 #lbp_ext:opaque if block ~-30 ~15 ~2 #lbp_ext:opaque if block ~-30 ~16 ~3 #lbp_ext:opaque if block ~-30 ~16 ~1 #lbp_ext:opaque unless block ~-30 ~16 ~2 structure_block run clone ~-30 ~16 ~2 ~-30 ~16 ~2 ~-30 12 ~2
-execute if score #hid lbp_info matches 0 if block ~-29 ~16 ~2 #lbp_ext:opaque if block ~-31 ~16 ~2 #lbp_ext:opaque if block ~-30 ~17 ~2 #lbp_ext:opaque if block ~-30 ~15 ~2 #lbp_ext:opaque if block ~-30 ~16 ~3 #lbp_ext:opaque if block ~-30 ~16 ~1 #lbp_ext:opaque run setblock ~-30 ~16 ~2 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-16,posZ:-2,sizeX:32,sizeY:32,sizeZ:16,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-30 ~16 ~2 run function lbp_ext:info/hide/12
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-30 ~16 ~2 {posX:-1,posY:-16,posZ:-2,sizeX:32,sizeY:32,sizeZ:16}
 execute if block ~-30 ~16 ~2 structure_block run scoreboard players set #hid lbp_info 1
-execute if score #hid lbp_info matches 0 if block ~-29 ~16 ~3 #lbp_ext:opaque if block ~-31 ~16 ~3 #lbp_ext:opaque if block ~-30 ~17 ~3 #lbp_ext:opaque if block ~-30 ~15 ~3 #lbp_ext:opaque if block ~-30 ~16 ~4 #lbp_ext:opaque if block ~-30 ~16 ~2 #lbp_ext:opaque unless block ~-30 ~16 ~3 structure_block run clone ~-30 ~16 ~3 ~-30 ~16 ~3 ~-30 12 ~3
-execute if score #hid lbp_info matches 0 if block ~-29 ~16 ~3 #lbp_ext:opaque if block ~-31 ~16 ~3 #lbp_ext:opaque if block ~-30 ~17 ~3 #lbp_ext:opaque if block ~-30 ~15 ~3 #lbp_ext:opaque if block ~-30 ~16 ~4 #lbp_ext:opaque if block ~-30 ~16 ~2 #lbp_ext:opaque run setblock ~-30 ~16 ~3 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-16,posZ:-3,sizeX:32,sizeY:32,sizeZ:16,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-30 ~16 ~3 run function lbp_ext:info/hide/12
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-30 ~16 ~3 {posX:-1,posY:-16,posZ:-3,sizeX:32,sizeY:32,sizeZ:16}
 execute if block ~-30 ~16 ~3 structure_block run scoreboard players set #hid lbp_info 1
 
 # Back Bridge Bottom
 scoreboard players set #hid lbp_info 0
-execute if score #hid lbp_info matches 0 if block ~-15 ~25 ~17 #lbp_ext:opaque if block ~-17 ~25 ~17 #lbp_ext:opaque if block ~-16 ~26 ~17 #lbp_ext:opaque if block ~-16 ~24 ~17 #lbp_ext:opaque if block ~-16 ~25 ~18 #lbp_ext:opaque if block ~-16 ~25 ~16 #lbp_ext:opaque unless block ~-16 ~25 ~17 structure_block run clone ~-16 ~25 ~17 ~-16 ~25 ~17 ~-16 12 ~17
-execute if score #hid lbp_info matches 0 if block ~-15 ~25 ~17 #lbp_ext:opaque if block ~-17 ~25 ~17 #lbp_ext:opaque if block ~-16 ~26 ~17 #lbp_ext:opaque if block ~-16 ~24 ~17 #lbp_ext:opaque if block ~-16 ~25 ~18 #lbp_ext:opaque if block ~-16 ~25 ~16 #lbp_ext:opaque run setblock ~-16 ~25 ~17 structure_block[mode=save]{mode:"SAVE",posX:-10,posY:-1,posZ:-1,sizeX:19,sizeY:8,sizeZ:8,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-16 ~25 ~17 run function lbp_ext:info/hide/12
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-16 ~25 ~17 {posX:-10,posY:-1,posZ:-1,sizeX:19,sizeY:8,sizeZ:8}
 execute if block ~-16 ~25 ~17 structure_block run scoreboard players set #hid lbp_info 1
-execute if score #hid lbp_info matches 0 if block ~-15 ~25 ~18 #lbp_ext:opaque if block ~-17 ~25 ~18 #lbp_ext:opaque if block ~-16 ~26 ~18 #lbp_ext:opaque if block ~-16 ~24 ~18 #lbp_ext:opaque if block ~-16 ~25 ~19 #lbp_ext:opaque if block ~-16 ~25 ~17 #lbp_ext:opaque unless block ~-16 ~25 ~18 structure_block run clone ~-16 ~25 ~18 ~-16 ~25 ~18 ~-16 12 ~18
-execute if score #hid lbp_info matches 0 if block ~-15 ~25 ~18 #lbp_ext:opaque if block ~-17 ~25 ~18 #lbp_ext:opaque if block ~-16 ~26 ~18 #lbp_ext:opaque if block ~-16 ~24 ~18 #lbp_ext:opaque if block ~-16 ~25 ~19 #lbp_ext:opaque if block ~-16 ~25 ~17 #lbp_ext:opaque run setblock ~-16 ~25 ~18 structure_block[mode=save]{mode:"SAVE",posX:-10,posY:-1,posZ:-2,sizeX:19,sizeY:8,sizeZ:8,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-16 ~25 ~18 run function lbp_ext:info/hide/12
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-16 ~25 ~18 {posX:-10,posY:-1,posZ:-2,sizeX:19,sizeY:8,sizeZ:8}
 execute if block ~-16 ~25 ~18 structure_block run scoreboard players set #hid lbp_info 1
 
 # Entrance
 scoreboard players set #hid lbp_info 0
-execute if score #hid lbp_info matches 0 if block ~-29 ~33 ~2 #lbp_ext:opaque if block ~-31 ~33 ~2 #lbp_ext:opaque if block ~-30 ~34 ~2 #lbp_ext:opaque if block ~-30 ~32 ~2 #lbp_ext:opaque if block ~-30 ~33 ~3 #lbp_ext:opaque if block ~-30 ~33 ~1 #lbp_ext:opaque unless block ~-30 ~33 ~2 structure_block run clone ~-30 ~33 ~2 ~-30 ~33 ~2 ~-30 13 ~2
-execute if score #hid lbp_info matches 0 if block ~-29 ~33 ~2 #lbp_ext:opaque if block ~-31 ~33 ~2 #lbp_ext:opaque if block ~-30 ~34 ~2 #lbp_ext:opaque if block ~-30 ~32 ~2 #lbp_ext:opaque if block ~-30 ~33 ~3 #lbp_ext:opaque if block ~-30 ~33 ~1 #lbp_ext:opaque run setblock ~-30 ~33 ~2 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-1,posZ:-2,sizeX:32,sizeY:32,sizeZ:17,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-30 ~33 ~2 run function lbp_ext:info/hide/13
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-30 ~33 ~2 {posX:-1,posY:-1,posZ:-2,sizeX:32,sizeY:32,sizeZ:17}
 execute if block ~-30 ~33 ~2 structure_block run scoreboard players set #hid lbp_info 1
-execute if score #hid lbp_info matches 0 if block ~-29 ~33 ~3 #lbp_ext:opaque if block ~-31 ~33 ~3 #lbp_ext:opaque if block ~-30 ~34 ~3 #lbp_ext:opaque if block ~-30 ~32 ~3 #lbp_ext:opaque if block ~-30 ~33 ~4 #lbp_ext:opaque if block ~-30 ~33 ~2 #lbp_ext:opaque unless block ~-30 ~33 ~3 structure_block run clone ~-30 ~33 ~3 ~-30 ~33 ~3 ~-30 13 ~3
-execute if score #hid lbp_info matches 0 if block ~-29 ~33 ~3 #lbp_ext:opaque if block ~-31 ~33 ~3 #lbp_ext:opaque if block ~-30 ~34 ~3 #lbp_ext:opaque if block ~-30 ~32 ~3 #lbp_ext:opaque if block ~-30 ~33 ~4 #lbp_ext:opaque if block ~-30 ~33 ~2 #lbp_ext:opaque run setblock ~-30 ~33 ~3 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-1,posZ:-3,sizeX:32,sizeY:32,sizeZ:17,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-30 ~33 ~3 run function lbp_ext:info/hide/13
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-30 ~33 ~3 {posX:-1,posY:-1,posZ:-3,sizeX:32,sizeY:32,sizeZ:17}
 execute if block ~-30 ~33 ~3 structure_block run scoreboard players set #hid lbp_info 1
 
 # Back Bridge Top
 scoreboard players set #hid lbp_info 0
-execute if score #hid lbp_info matches 0 if block ~-18 ~33 ~18 #lbp_ext:opaque if block ~-20 ~33 ~18 #lbp_ext:opaque if block ~-19 ~34 ~18 #lbp_ext:opaque if block ~-19 ~32 ~18 #lbp_ext:opaque if block ~-19 ~33 ~19 #lbp_ext:opaque if block ~-19 ~33 ~17 #lbp_ext:opaque unless block ~-19 ~33 ~18 structure_block run clone ~-19 ~33 ~18 ~-19 ~33 ~18 ~-19 12 ~18
-execute if score #hid lbp_info matches 0 if block ~-18 ~33 ~18 #lbp_ext:opaque if block ~-20 ~33 ~18 #lbp_ext:opaque if block ~-19 ~34 ~18 #lbp_ext:opaque if block ~-19 ~32 ~18 #lbp_ext:opaque if block ~-19 ~33 ~19 #lbp_ext:opaque if block ~-19 ~33 ~17 #lbp_ext:opaque run setblock ~-19 ~33 ~18 structure_block[mode=save]{mode:"SAVE",posX:-7,posY:-1,posZ:-1,sizeX:19,sizeY:11,sizeZ:8,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-19 ~33 ~18 run function lbp_ext:info/hide/12
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-19 ~33 ~18 {posX:-7,posY:-1,posZ:-1,sizeX:19,sizeY:11,sizeZ:8}
 execute if block ~-19 ~33 ~18 structure_block run scoreboard players set #hid lbp_info 1
-execute if score #hid lbp_info matches 0 if block ~-18 ~33 ~19 #lbp_ext:opaque if block ~-20 ~33 ~19 #lbp_ext:opaque if block ~-19 ~34 ~19 #lbp_ext:opaque if block ~-19 ~32 ~19 #lbp_ext:opaque if block ~-19 ~33 ~20 #lbp_ext:opaque if block ~-19 ~33 ~18 #lbp_ext:opaque unless block ~-19 ~33 ~19 structure_block run clone ~-19 ~33 ~19 ~-19 ~33 ~19 ~-19 12 ~19
-execute if score #hid lbp_info matches 0 if block ~-18 ~33 ~19 #lbp_ext:opaque if block ~-20 ~33 ~19 #lbp_ext:opaque if block ~-19 ~34 ~19 #lbp_ext:opaque if block ~-19 ~32 ~19 #lbp_ext:opaque if block ~-19 ~33 ~20 #lbp_ext:opaque if block ~-19 ~33 ~18 #lbp_ext:opaque run setblock ~-19 ~33 ~19 structure_block[mode=save]{mode:"SAVE",posX:-7,posY:-1,posZ:-2,sizeX:19,sizeY:11,sizeZ:8,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-19 ~33 ~19 run function lbp_ext:info/hide/12
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-19 ~33 ~19 {posX:-7,posY:-1,posZ:-2,sizeX:19,sizeY:11,sizeZ:8}
 execute if block ~-19 ~33 ~19 structure_block run scoreboard players set #hid lbp_info 1
 
 # Entrance Face
 scoreboard players set #hid lbp_info 0
-execute if score #hid lbp_info matches 0 if block ~-21 ~43 ~-2 #lbp_ext:opaque if block ~-23 ~43 ~-2 #lbp_ext:opaque if block ~-22 ~44 ~-2 #lbp_ext:opaque if block ~-22 ~42 ~-2 #lbp_ext:opaque if block ~-22 ~43 ~-1 #lbp_ext:opaque if block ~-22 ~43 ~-3 #lbp_ext:opaque unless block ~-22 ~43 ~-2 structure_block run clone ~-22 ~43 ~-2 ~-22 ~43 ~-2 ~-22 12 ~-2
-execute if score #hid lbp_info matches 0 if block ~-21 ~43 ~-2 #lbp_ext:opaque if block ~-23 ~43 ~-2 #lbp_ext:opaque if block ~-22 ~44 ~-2 #lbp_ext:opaque if block ~-22 ~42 ~-2 #lbp_ext:opaque if block ~-22 ~43 ~-1 #lbp_ext:opaque if block ~-22 ~43 ~-3 #lbp_ext:opaque run setblock ~-22 ~43 ~-2 structure_block[mode=save]{mode:"SAVE",posX:-9,posY:-3,posZ:-3,sizeX:32,sizeY:24,sizeZ:5,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-22 ~43 ~-2 run function lbp_ext:info/hide/12
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-22 ~43 ~-2 {posX:-9,posY:-3,posZ:-3,sizeX:32,sizeY:24,sizeZ:5}
 execute if block ~-22 ~43 ~-2 structure_block run scoreboard players set #hid lbp_info 1
-execute if score #hid lbp_info matches 0 if block ~-21 ~44 ~-4 #lbp_ext:opaque if block ~-23 ~44 ~-4 #lbp_ext:opaque if block ~-22 ~45 ~-4 #lbp_ext:opaque if block ~-22 ~43 ~-4 #lbp_ext:opaque if block ~-22 ~44 ~-3 #lbp_ext:opaque if block ~-22 ~44 ~-5 #lbp_ext:opaque unless block ~-22 ~44 ~-4 structure_block run clone ~-22 ~44 ~-4 ~-22 ~44 ~-4 ~-22 12 ~-4
-execute if score #hid lbp_info matches 0 if block ~-21 ~44 ~-4 #lbp_ext:opaque if block ~-23 ~44 ~-4 #lbp_ext:opaque if block ~-22 ~45 ~-4 #lbp_ext:opaque if block ~-22 ~43 ~-4 #lbp_ext:opaque if block ~-22 ~44 ~-3 #lbp_ext:opaque if block ~-22 ~44 ~-5 #lbp_ext:opaque run setblock ~-22 ~44 ~-4 structure_block[mode=save]{mode:"SAVE",posX:-9,posY:-4,posZ:-1,sizeX:32,sizeY:24,sizeZ:5,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-22 ~44 ~-4 run function lbp_ext:info/hide/12
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-22 ~44 ~-4 {posX:-9,posY:-4,posZ:-1,sizeX:32,sizeY:24,sizeZ:5}
 execute if block ~-22 ~44 ~-4 structure_block run scoreboard players set #hid lbp_info 1
 
 # Left Wall
 scoreboard players set #hid lbp_info 0
-execute if score #hid lbp_info matches 0 if block ~3 ~1 ~3 #lbp_ext:opaque if block ~1 ~1 ~3 #lbp_ext:opaque if block ~2 ~2 ~3 #lbp_ext:opaque if block ~2 ~ ~3 #lbp_ext:opaque if block ~2 ~1 ~4 #lbp_ext:opaque if block ~2 ~1 ~2 #lbp_ext:opaque unless block ~2 ~1 ~3 structure_block run clone ~2 ~1 ~3 ~2 ~1 ~3 ~2 12 ~3
-execute if score #hid lbp_info matches 0 if block ~3 ~1 ~3 #lbp_ext:opaque if block ~1 ~1 ~3 #lbp_ext:opaque if block ~2 ~2 ~3 #lbp_ext:opaque if block ~2 ~ ~3 #lbp_ext:opaque if block ~2 ~1 ~4 #lbp_ext:opaque if block ~2 ~1 ~2 #lbp_ext:opaque run setblock ~2 ~1 ~3 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-1,posZ:-1,sizeX:16,sizeY:24,sizeZ:16,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~2 ~1 ~3 run function lbp_ext:info/hide/12
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~2 ~1 ~3 {posX:-1,posY:-1,posZ:-1,sizeX:16,sizeY:24,sizeZ:16}
 execute if block ~2 ~1 ~3 structure_block run scoreboard players set #hid lbp_info 1
-execute if score #hid lbp_info matches 0 if block ~3 ~1 ~4 #lbp_ext:opaque if block ~1 ~1 ~4 #lbp_ext:opaque if block ~2 ~2 ~4 #lbp_ext:opaque if block ~2 ~ ~4 #lbp_ext:opaque if block ~2 ~1 ~5 #lbp_ext:opaque if block ~2 ~1 ~3 #lbp_ext:opaque unless block ~2 ~1 ~4 structure_block run clone ~2 ~1 ~4 ~2 ~1 ~4 ~2 12 ~4
-execute if score #hid lbp_info matches 0 if block ~3 ~1 ~4 #lbp_ext:opaque if block ~1 ~1 ~4 #lbp_ext:opaque if block ~2 ~2 ~4 #lbp_ext:opaque if block ~2 ~ ~4 #lbp_ext:opaque if block ~2 ~1 ~5 #lbp_ext:opaque if block ~2 ~1 ~3 #lbp_ext:opaque run setblock ~2 ~1 ~4 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-1,posZ:-2,sizeX:16,sizeY:24,sizeZ:16,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~2 ~1 ~4 run function lbp_ext:info/hide/12
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~2 ~1 ~4 {posX:-1,posY:-1,posZ:-2,sizeX:16,sizeY:24,sizeZ:16}
 execute if block ~2 ~1 ~4 structure_block run scoreboard players set #hid lbp_info 1
 
 # Left Rampart
 scoreboard players set #hid lbp_info 0
-execute if score #slot6 lbp_info matches 0 if score #hid lbp_info matches 0 if block ~3 ~32 ~3 #lbp_ext:opaque if block ~1 ~32 ~3 #lbp_ext:opaque if block ~2 ~33 ~3 #lbp_ext:opaque if block ~2 ~31 ~3 #lbp_ext:opaque if block ~2 ~32 ~4 #lbp_ext:opaque if block ~2 ~32 ~2 #lbp_ext:opaque unless block ~2 ~32 ~3 structure_block run clone ~2 ~32 ~3 ~2 ~32 ~3 ~2 13 ~3
-execute if score #slot6 lbp_info matches 0 if score #hid lbp_info matches 0 if block ~3 ~32 ~3 #lbp_ext:opaque if block ~1 ~32 ~3 #lbp_ext:opaque if block ~2 ~33 ~3 #lbp_ext:opaque if block ~2 ~31 ~3 #lbp_ext:opaque if block ~2 ~32 ~4 #lbp_ext:opaque if block ~2 ~32 ~2 #lbp_ext:opaque run setblock ~2 ~32 ~3 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-8,posZ:-1,sizeX:16,sizeY:22,sizeZ:16,showboundingbox:1b}
+execute if score #slot6 lbp_info matches 0 if score #hid lbp_info matches 0 positioned ~2 ~32 ~3 run function lbp_ext:info/hide/13
+execute if score #slot6 lbp_info matches 0 if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~2 ~32 ~3 {posX:-1,posY:-8,posZ:-1,sizeX:16,sizeY:22,sizeZ:16}
 execute if score #slot6 lbp_info matches 0 if block ~2 ~32 ~3 structure_block run scoreboard players set #hid lbp_info 1
-execute if score #slot6 lbp_info matches 0 if score #hid lbp_info matches 0 if block ~3 ~32 ~4 #lbp_ext:opaque if block ~1 ~32 ~4 #lbp_ext:opaque if block ~2 ~33 ~4 #lbp_ext:opaque if block ~2 ~31 ~4 #lbp_ext:opaque if block ~2 ~32 ~5 #lbp_ext:opaque if block ~2 ~32 ~3 #lbp_ext:opaque unless block ~2 ~32 ~4 structure_block run clone ~2 ~32 ~4 ~2 ~32 ~4 ~2 13 ~4
-execute if score #slot6 lbp_info matches 0 if score #hid lbp_info matches 0 if block ~3 ~32 ~4 #lbp_ext:opaque if block ~1 ~32 ~4 #lbp_ext:opaque if block ~2 ~33 ~4 #lbp_ext:opaque if block ~2 ~31 ~4 #lbp_ext:opaque if block ~2 ~32 ~5 #lbp_ext:opaque if block ~2 ~32 ~3 #lbp_ext:opaque run setblock ~2 ~32 ~4 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-8,posZ:-2,sizeX:16,sizeY:22,sizeZ:16,showboundingbox:1b}
+execute if score #slot6 lbp_info matches 0 if score #hid lbp_info matches 0 positioned ~2 ~32 ~4 run function lbp_ext:info/hide/13
+execute if score #slot6 lbp_info matches 0 if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~2 ~32 ~4 {posX:-1,posY:-8,posZ:-2,sizeX:16,sizeY:22,sizeZ:16}
 execute if score #slot6 lbp_info matches 0 if block ~2 ~32 ~4 structure_block run scoreboard players set #hid lbp_info 1
 scoreboard players set #hid lbp_info 0
-execute if score #slot6 lbp_info matches 1 if score #hid lbp_info matches 0 if block ~3 ~32 ~5 #lbp_ext:opaque if block ~1 ~32 ~5 #lbp_ext:opaque if block ~2 ~33 ~5 #lbp_ext:opaque if block ~2 ~31 ~5 #lbp_ext:opaque if block ~2 ~32 ~6 #lbp_ext:opaque if block ~2 ~32 ~4 #lbp_ext:opaque unless block ~2 ~32 ~5 structure_block run clone ~2 ~32 ~5 ~2 ~32 ~5 ~2 12 ~5
-execute if score #slot6 lbp_info matches 1 if score #hid lbp_info matches 0 if block ~3 ~32 ~5 #lbp_ext:opaque if block ~1 ~32 ~5 #lbp_ext:opaque if block ~2 ~33 ~5 #lbp_ext:opaque if block ~2 ~31 ~5 #lbp_ext:opaque if block ~2 ~32 ~6 #lbp_ext:opaque if block ~2 ~32 ~4 #lbp_ext:opaque run setblock ~2 ~32 ~5 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-8,posZ:-3,sizeX:16,sizeY:32,sizeZ:16,showboundingbox:1b}
+execute if score #slot6 lbp_info matches 1 if score #hid lbp_info matches 0 positioned ~2 ~32 ~5 run function lbp_ext:info/hide/12
+execute if score #slot6 lbp_info matches 1 if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~2 ~32 ~5 {posX:-1,posY:-8,posZ:-3,sizeX:16,sizeY:32,sizeZ:16}
 execute if score #slot6 lbp_info matches 1 if block ~2 ~32 ~5 structure_block run scoreboard players set #hid lbp_info 1
-execute if score #slot6 lbp_info matches 1 if score #hid lbp_info matches 0 if block ~3 ~32 ~9 #lbp_ext:opaque if block ~1 ~32 ~9 #lbp_ext:opaque if block ~2 ~33 ~9 #lbp_ext:opaque if block ~2 ~31 ~9 #lbp_ext:opaque if block ~2 ~32 ~10 #lbp_ext:opaque if block ~2 ~32 ~8 #lbp_ext:opaque unless block ~2 ~32 ~9 structure_block run clone ~2 ~32 ~9 ~2 ~32 ~9 ~2 12 ~9
-execute if score #slot6 lbp_info matches 1 if score #hid lbp_info matches 0 if block ~3 ~32 ~9 #lbp_ext:opaque if block ~1 ~32 ~9 #lbp_ext:opaque if block ~2 ~33 ~9 #lbp_ext:opaque if block ~2 ~31 ~9 #lbp_ext:opaque if block ~2 ~32 ~10 #lbp_ext:opaque if block ~2 ~32 ~8 #lbp_ext:opaque run setblock ~2 ~32 ~9 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-8,posZ:-7,sizeX:16,sizeY:32,sizeZ:16,showboundingbox:1b}
+execute if score #slot6 lbp_info matches 1 if score #hid lbp_info matches 0 positioned ~2 ~32 ~9 run function lbp_ext:info/hide/12
+execute if score #slot6 lbp_info matches 1 if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~2 ~32 ~9 {posX:-1,posY:-8,posZ:-7,sizeX:16,sizeY:32,sizeZ:16}
 execute if score #slot6 lbp_info matches 1 if block ~2 ~32 ~9 structure_block run scoreboard players set #hid lbp_info 1
 scoreboard players set #hid lbp_info 0
-execute if score #slot6 lbp_info matches 1 if score #hid lbp_info matches 0 if block ~3 ~32 ~10 #lbp_ext:opaque if block ~1 ~32 ~10 #lbp_ext:opaque if block ~2 ~33 ~10 #lbp_ext:opaque if block ~2 ~31 ~10 #lbp_ext:opaque if block ~2 ~32 ~11 #lbp_ext:opaque if block ~2 ~32 ~9 #lbp_ext:opaque unless block ~2 ~32 ~10 structure_block run clone ~2 ~32 ~10 ~2 ~32 ~10 ~2 12 ~10
-execute if score #slot6 lbp_info matches 1 if score #hid lbp_info matches 0 if block ~3 ~32 ~10 #lbp_ext:opaque if block ~1 ~32 ~10 #lbp_ext:opaque if block ~2 ~33 ~10 #lbp_ext:opaque if block ~2 ~31 ~10 #lbp_ext:opaque if block ~2 ~32 ~11 #lbp_ext:opaque if block ~2 ~32 ~9 #lbp_ext:opaque run setblock ~2 ~32 ~10 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:5,posZ:-10,sizeX:16,sizeY:19,sizeZ:2,showboundingbox:1b}
+execute if score #slot6 lbp_info matches 1 if score #hid lbp_info matches 0 positioned ~2 ~32 ~10 run function lbp_ext:info/hide/12
+execute if score #slot6 lbp_info matches 1 if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~2 ~32 ~10 {posX:-1,posY:5,posZ:-10,sizeX:16,sizeY:19,sizeZ:2}
 execute if score #slot6 lbp_info matches 1 if block ~2 ~32 ~10 structure_block run scoreboard players set #hid lbp_info 1
-execute if score #slot6 lbp_info matches 1 if score #hid lbp_info matches 0 if block ~3 ~32 ~11 #lbp_ext:opaque if block ~1 ~32 ~11 #lbp_ext:opaque if block ~2 ~33 ~11 #lbp_ext:opaque if block ~2 ~31 ~11 #lbp_ext:opaque if block ~2 ~32 ~12 #lbp_ext:opaque if block ~2 ~32 ~10 #lbp_ext:opaque unless block ~2 ~32 ~11 structure_block run clone ~2 ~32 ~11 ~2 ~32 ~11 ~2 12 ~11
-execute if score #slot6 lbp_info matches 1 if score #hid lbp_info matches 0 if block ~3 ~32 ~11 #lbp_ext:opaque if block ~1 ~32 ~11 #lbp_ext:opaque if block ~2 ~33 ~11 #lbp_ext:opaque if block ~2 ~31 ~11 #lbp_ext:opaque if block ~2 ~32 ~12 #lbp_ext:opaque if block ~2 ~32 ~10 #lbp_ext:opaque run setblock ~2 ~32 ~11 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:5,posZ:-11,sizeX:16,sizeY:19,sizeZ:2,showboundingbox:1b}
+execute if score #slot6 lbp_info matches 1 if score #hid lbp_info matches 0 positioned ~2 ~32 ~11 run function lbp_ext:info/hide/12
+execute if score #slot6 lbp_info matches 1 if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~2 ~32 ~11 {posX:-1,posY:5,posZ:-11,sizeX:16,sizeY:19,sizeZ:2}
 execute if score #slot6 lbp_info matches 1 if block ~2 ~32 ~11 structure_block run scoreboard players set #hid lbp_info 1
 
 # Right Wall
 scoreboard players set #hid lbp_info 0
-execute if score #hid lbp_info matches 0 if block ~-45 ~1 ~3 #lbp_ext:opaque if block ~-47 ~1 ~3 #lbp_ext:opaque if block ~-46 ~2 ~3 #lbp_ext:opaque if block ~-46 ~ ~3 #lbp_ext:opaque if block ~-46 ~1 ~4 #lbp_ext:opaque if block ~-46 ~1 ~2 #lbp_ext:opaque unless block ~-46 ~1 ~3 structure_block run clone ~-46 ~1 ~3 ~-46 ~1 ~3 ~-46 12 ~3
-execute if score #hid lbp_info matches 0 if block ~-45 ~1 ~3 #lbp_ext:opaque if block ~-47 ~1 ~3 #lbp_ext:opaque if block ~-46 ~2 ~3 #lbp_ext:opaque if block ~-46 ~ ~3 #lbp_ext:opaque if block ~-46 ~1 ~4 #lbp_ext:opaque if block ~-46 ~1 ~2 #lbp_ext:opaque run setblock ~-46 ~1 ~3 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-1,posZ:-1,sizeX:16,sizeY:24,sizeZ:16,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-46 ~1 ~3 run function lbp_ext:info/hide/12
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-46 ~1 ~3 {posX:-1,posY:-1,posZ:-1,sizeX:16,sizeY:24,sizeZ:16}
 execute if block ~-46 ~1 ~3 structure_block run scoreboard players set #hid lbp_info 1
-execute if score #hid lbp_info matches 0 if block ~-45 ~1 ~4 #lbp_ext:opaque if block ~-47 ~1 ~4 #lbp_ext:opaque if block ~-46 ~2 ~4 #lbp_ext:opaque if block ~-46 ~ ~4 #lbp_ext:opaque if block ~-46 ~1 ~5 #lbp_ext:opaque if block ~-46 ~1 ~3 #lbp_ext:opaque unless block ~-46 ~1 ~4 structure_block run clone ~-46 ~1 ~4 ~-46 ~1 ~4 ~-46 12 ~4
-execute if score #hid lbp_info matches 0 if block ~-45 ~1 ~4 #lbp_ext:opaque if block ~-47 ~1 ~4 #lbp_ext:opaque if block ~-46 ~2 ~4 #lbp_ext:opaque if block ~-46 ~ ~4 #lbp_ext:opaque if block ~-46 ~1 ~5 #lbp_ext:opaque if block ~-46 ~1 ~3 #lbp_ext:opaque run setblock ~-46 ~1 ~4 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-1,posZ:-2,sizeX:16,sizeY:24,sizeZ:16,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-46 ~1 ~4 run function lbp_ext:info/hide/12
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-46 ~1 ~4 {posX:-1,posY:-1,posZ:-2,sizeX:16,sizeY:24,sizeZ:16}
 execute if block ~-46 ~1 ~4 structure_block run scoreboard players set #hid lbp_info 1
 
 # Right Rampart
 scoreboard players set #hid lbp_info 0
-execute if score #slot8 lbp_info matches 0 if score #hid lbp_info matches 0 if block ~-45 ~32 ~3 #lbp_ext:opaque if block ~-47 ~32 ~3 #lbp_ext:opaque if block ~-46 ~33 ~3 #lbp_ext:opaque if block ~-46 ~31 ~3 #lbp_ext:opaque if block ~-46 ~32 ~4 #lbp_ext:opaque if block ~-46 ~32 ~2 #lbp_ext:opaque unless block ~-46 ~32 ~3 structure_block run clone ~-46 ~32 ~3 ~-46 ~32 ~3 ~-46 13 ~3
-execute if score #slot8 lbp_info matches 0 if score #hid lbp_info matches 0 if block ~-45 ~32 ~3 #lbp_ext:opaque if block ~-47 ~32 ~3 #lbp_ext:opaque if block ~-46 ~33 ~3 #lbp_ext:opaque if block ~-46 ~31 ~3 #lbp_ext:opaque if block ~-46 ~32 ~4 #lbp_ext:opaque if block ~-46 ~32 ~2 #lbp_ext:opaque run setblock ~-46 ~32 ~3 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-8,posZ:-1,sizeX:16,sizeY:22,sizeZ:16,showboundingbox:1b}
+execute if score #slot8 lbp_info matches 0 if score #hid lbp_info matches 0 positioned ~-46 ~32 ~3 run function lbp_ext:info/hide/13
+execute if score #slot8 lbp_info matches 0 if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-46 ~32 ~3 {posX:-1,posY:-8,posZ:-1,sizeX:16,sizeY:22,sizeZ:16}
 execute if score #slot8 lbp_info matches 0 if block ~-46 ~32 ~3 structure_block run scoreboard players set #hid lbp_info 1
-execute if score #slot8 lbp_info matches 0 if score #hid lbp_info matches 0 if block ~-45 ~32 ~4 #lbp_ext:opaque if block ~-47 ~32 ~4 #lbp_ext:opaque if block ~-46 ~33 ~4 #lbp_ext:opaque if block ~-46 ~31 ~4 #lbp_ext:opaque if block ~-46 ~32 ~5 #lbp_ext:opaque if block ~-46 ~32 ~3 #lbp_ext:opaque unless block ~-46 ~32 ~4 structure_block run clone ~-46 ~32 ~4 ~-46 ~32 ~4 ~-46 13 ~4
-execute if score #slot8 lbp_info matches 0 if score #hid lbp_info matches 0 if block ~-45 ~32 ~4 #lbp_ext:opaque if block ~-47 ~32 ~4 #lbp_ext:opaque if block ~-46 ~33 ~4 #lbp_ext:opaque if block ~-46 ~31 ~4 #lbp_ext:opaque if block ~-46 ~32 ~5 #lbp_ext:opaque if block ~-46 ~32 ~3 #lbp_ext:opaque run setblock ~-46 ~32 ~4 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-8,posZ:-2,sizeX:16,sizeY:22,sizeZ:16,showboundingbox:1b}
+execute if score #slot8 lbp_info matches 0 if score #hid lbp_info matches 0 positioned ~-46 ~32 ~4 run function lbp_ext:info/hide/13
+execute if score #slot8 lbp_info matches 0 if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-46 ~32 ~4 {posX:-1,posY:-8,posZ:-2,sizeX:16,sizeY:22,sizeZ:16}
 execute if score #slot8 lbp_info matches 0 if block ~-46 ~32 ~4 structure_block run scoreboard players set #hid lbp_info 1
 scoreboard players set #hid lbp_info 0
-execute if score #slot8 lbp_info matches 1 if score #hid lbp_info matches 0 if block ~-45 ~32 ~5 #lbp_ext:opaque if block ~-47 ~32 ~5 #lbp_ext:opaque if block ~-46 ~33 ~5 #lbp_ext:opaque if block ~-46 ~31 ~5 #lbp_ext:opaque if block ~-46 ~32 ~6 #lbp_ext:opaque if block ~-46 ~32 ~4 #lbp_ext:opaque unless block ~-46 ~32 ~5 structure_block run clone ~-46 ~32 ~5 ~-46 ~32 ~5 ~-46 12 ~5
-execute if score #slot8 lbp_info matches 1 if score #hid lbp_info matches 0 if block ~-45 ~32 ~5 #lbp_ext:opaque if block ~-47 ~32 ~5 #lbp_ext:opaque if block ~-46 ~33 ~5 #lbp_ext:opaque if block ~-46 ~31 ~5 #lbp_ext:opaque if block ~-46 ~32 ~6 #lbp_ext:opaque if block ~-46 ~32 ~4 #lbp_ext:opaque run setblock ~-46 ~32 ~5 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-8,posZ:-3,sizeX:16,sizeY:32,sizeZ:16,showboundingbox:1b}
+execute if score #slot8 lbp_info matches 1 if score #hid lbp_info matches 0 positioned ~-46 ~32 ~5 run function lbp_ext:info/hide/12
+execute if score #slot8 lbp_info matches 1 if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-46 ~32 ~5 {posX:-1,posY:-8,posZ:-3,sizeX:16,sizeY:32,sizeZ:16}
 execute if score #slot8 lbp_info matches 1 if block ~-46 ~32 ~5 structure_block run scoreboard players set #hid lbp_info 1
-execute if score #slot8 lbp_info matches 1 if score #hid lbp_info matches 0 if block ~-45 ~32 ~9 #lbp_ext:opaque if block ~-47 ~32 ~9 #lbp_ext:opaque if block ~-46 ~33 ~9 #lbp_ext:opaque if block ~-46 ~31 ~9 #lbp_ext:opaque if block ~-46 ~32 ~10 #lbp_ext:opaque if block ~-46 ~32 ~8 #lbp_ext:opaque unless block ~-46 ~32 ~9 structure_block run clone ~-46 ~32 ~9 ~-46 ~32 ~9 ~-46 12 ~9
-execute if score #slot8 lbp_info matches 1 if score #hid lbp_info matches 0 if block ~-45 ~32 ~9 #lbp_ext:opaque if block ~-47 ~32 ~9 #lbp_ext:opaque if block ~-46 ~33 ~9 #lbp_ext:opaque if block ~-46 ~31 ~9 #lbp_ext:opaque if block ~-46 ~32 ~10 #lbp_ext:opaque if block ~-46 ~32 ~8 #lbp_ext:opaque run setblock ~-46 ~32 ~9 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-8,posZ:-7,sizeX:16,sizeY:32,sizeZ:16,showboundingbox:1b}
+execute if score #slot8 lbp_info matches 1 if score #hid lbp_info matches 0 positioned ~-46 ~32 ~9 run function lbp_ext:info/hide/12
+execute if score #slot8 lbp_info matches 1 if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-46 ~32 ~9 {posX:-1,posY:-8,posZ:-7,sizeX:16,sizeY:32,sizeZ:16}
 execute if score #slot8 lbp_info matches 1 if block ~-46 ~32 ~9 structure_block run scoreboard players set #hid lbp_info 1
 scoreboard players set #hid lbp_info 0
-execute if score #slot8 lbp_info matches 1 if score #hid lbp_info matches 0 if block ~-45 ~32 ~10 #lbp_ext:opaque if block ~-47 ~32 ~10 #lbp_ext:opaque if block ~-46 ~33 ~10 #lbp_ext:opaque if block ~-46 ~31 ~10 #lbp_ext:opaque if block ~-46 ~32 ~11 #lbp_ext:opaque if block ~-46 ~32 ~9 #lbp_ext:opaque unless block ~-46 ~32 ~10 structure_block run clone ~-46 ~32 ~10 ~-46 ~32 ~10 ~-46 12 ~10
-execute if score #slot8 lbp_info matches 1 if score #hid lbp_info matches 0 if block ~-45 ~32 ~10 #lbp_ext:opaque if block ~-47 ~32 ~10 #lbp_ext:opaque if block ~-46 ~33 ~10 #lbp_ext:opaque if block ~-46 ~31 ~10 #lbp_ext:opaque if block ~-46 ~32 ~11 #lbp_ext:opaque if block ~-46 ~32 ~9 #lbp_ext:opaque run setblock ~-46 ~32 ~10 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:5,posZ:-10,sizeX:16,sizeY:19,sizeZ:2,showboundingbox:1b}
+execute if score #slot8 lbp_info matches 1 if score #hid lbp_info matches 0 positioned ~-46 ~32 ~10 run function lbp_ext:info/hide/12
+execute if score #slot8 lbp_info matches 1 if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-46 ~32 ~10 {posX:-1,posY:5,posZ:-10,sizeX:16,sizeY:19,sizeZ:2}
 execute if score #slot8 lbp_info matches 1 if block ~-46 ~32 ~10 structure_block run scoreboard players set #hid lbp_info 1
-execute if score #slot8 lbp_info matches 1 if score #hid lbp_info matches 0 if block ~-45 ~32 ~11 #lbp_ext:opaque if block ~-47 ~32 ~11 #lbp_ext:opaque if block ~-46 ~33 ~11 #lbp_ext:opaque if block ~-46 ~31 ~11 #lbp_ext:opaque if block ~-46 ~32 ~12 #lbp_ext:opaque if block ~-46 ~32 ~10 #lbp_ext:opaque unless block ~-46 ~32 ~11 structure_block run clone ~-46 ~32 ~11 ~-46 ~32 ~11 ~-46 12 ~11
-execute if score #slot8 lbp_info matches 1 if score #hid lbp_info matches 0 if block ~-45 ~32 ~11 #lbp_ext:opaque if block ~-47 ~32 ~11 #lbp_ext:opaque if block ~-46 ~33 ~11 #lbp_ext:opaque if block ~-46 ~31 ~11 #lbp_ext:opaque if block ~-46 ~32 ~12 #lbp_ext:opaque if block ~-46 ~32 ~10 #lbp_ext:opaque run setblock ~-46 ~32 ~11 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:5,posZ:-11,sizeX:16,sizeY:19,sizeZ:2,showboundingbox:1b}
+execute if score #slot8 lbp_info matches 1 if score #hid lbp_info matches 0 positioned ~-46 ~32 ~11 run function lbp_ext:info/hide/12
+execute if score #slot8 lbp_info matches 1 if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-46 ~32 ~11 {posX:-1,posY:5,posZ:-11,sizeX:16,sizeY:19,sizeZ:2}
 execute if score #slot8 lbp_info matches 1 if block ~-46 ~32 ~11 structure_block run scoreboard players set #hid lbp_info 1
 
 # Bridge
 scoreboard players set #hid lbp_info 0
-execute if score #hid lbp_info matches 0 if block ~-15 ~22 ~-6 #lbp_ext:opaque if block ~-17 ~22 ~-6 #lbp_ext:opaque if block ~-16 ~23 ~-6 #lbp_ext:opaque if block ~-16 ~21 ~-6 #lbp_ext:opaque if block ~-16 ~22 ~-5 #lbp_ext:opaque if block ~-16 ~22 ~-7 #lbp_ext:opaque unless block ~-16 ~22 ~-6 structure_block run clone ~-16 ~22 ~-6 ~-16 ~22 ~-6 ~-16 12 ~-6
-execute if score #hid lbp_info matches 0 if block ~-15 ~22 ~-6 #lbp_ext:opaque if block ~-17 ~22 ~-6 #lbp_ext:opaque if block ~-16 ~23 ~-6 #lbp_ext:opaque if block ~-16 ~21 ~-6 #lbp_ext:opaque if block ~-16 ~22 ~-5 #lbp_ext:opaque if block ~-16 ~22 ~-7 #lbp_ext:opaque run setblock ~-16 ~22 ~-6 structure_block[mode=save]{mode:"SAVE",posX:-6,posY:-1,posZ:-25,sizeX:16,sizeY:19,sizeZ:31,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-16 ~22 ~-6 run function lbp_ext:info/hide/12
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-16 ~22 ~-6 {posX:-6,posY:-1,posZ:-25,sizeX:16,sizeY:19,sizeZ:31}
 execute if block ~-16 ~22 ~-6 structure_block run scoreboard players set #hid lbp_info 1
-execute if score #hid lbp_info matches 0 if block ~-15 ~23 ~-6 #lbp_ext:opaque if block ~-17 ~23 ~-6 #lbp_ext:opaque if block ~-16 ~24 ~-6 #lbp_ext:opaque if block ~-16 ~22 ~-6 #lbp_ext:opaque if block ~-16 ~23 ~-5 #lbp_ext:opaque if block ~-16 ~23 ~-7 #lbp_ext:opaque unless block ~-16 ~23 ~-6 structure_block run clone ~-16 ~23 ~-6 ~-16 ~23 ~-6 ~-16 13 ~-6
-execute if score #hid lbp_info matches 0 if block ~-15 ~23 ~-6 #lbp_ext:opaque if block ~-17 ~23 ~-6 #lbp_ext:opaque if block ~-16 ~24 ~-6 #lbp_ext:opaque if block ~-16 ~22 ~-6 #lbp_ext:opaque if block ~-16 ~23 ~-5 #lbp_ext:opaque if block ~-16 ~23 ~-7 #lbp_ext:opaque run setblock ~-16 ~23 ~-6 structure_block[mode=save]{mode:"SAVE",posX:-6,posY:-2,posZ:-25,sizeX:16,sizeY:19,sizeZ:31,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-16 ~23 ~-6 run function lbp_ext:info/hide/13
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-16 ~23 ~-6 {posX:-6,posY:-2,posZ:-25,sizeX:16,sizeY:19,sizeZ:31}
 execute if block ~-16 ~23 ~-6 structure_block run scoreboard players set #hid lbp_info 1
 
 # Bridge Leg
 scoreboard players set #hid lbp_info 0
-execute if score #hid lbp_info matches 0 if block ~-14 ~ ~-24 #lbp_ext:opaque if block ~-16 ~ ~-24 #lbp_ext:opaque if block ~-15 ~1 ~-24 #lbp_ext:opaque if block ~-15 ~-1 ~-24 #lbp_ext:opaque if block ~-15 ~ ~-23 #lbp_ext:opaque if block ~-15 ~ ~-25 #lbp_ext:opaque unless block ~-15 ~ ~-24 structure_block run clone ~-15 ~ ~-24 ~-15 ~ ~-24 ~-15 12 ~-24
-execute if score #hid lbp_info matches 0 if block ~-14 ~ ~-24 #lbp_ext:opaque if block ~-16 ~ ~-24 #lbp_ext:opaque if block ~-15 ~1 ~-24 #lbp_ext:opaque if block ~-15 ~-1 ~-24 #lbp_ext:opaque if block ~-15 ~ ~-23 #lbp_ext:opaque if block ~-15 ~ ~-25 #lbp_ext:opaque run setblock ~-15 ~ ~-24 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-1,posZ:-1,sizeX:3,sizeY:22,sizeZ:3,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-15 ~ ~-24 run function lbp_ext:info/hide/12
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-15 ~ ~-24 {posX:-1,posY:-1,posZ:-1,sizeX:3,sizeY:22,sizeZ:3}
 execute if block ~-15 ~ ~-24 structure_block run scoreboard players set #hid lbp_info 1
-execute if score #hid lbp_info matches 0 if block ~-14 ~1 ~-24 #lbp_ext:opaque if block ~-16 ~1 ~-24 #lbp_ext:opaque if block ~-15 ~2 ~-24 #lbp_ext:opaque if block ~-15 ~ ~-24 #lbp_ext:opaque if block ~-15 ~1 ~-23 #lbp_ext:opaque if block ~-15 ~1 ~-25 #lbp_ext:opaque unless block ~-15 ~1 ~-24 structure_block run clone ~-15 ~1 ~-24 ~-15 ~1 ~-24 ~-15 13 ~-24
-execute if score #hid lbp_info matches 0 if block ~-14 ~1 ~-24 #lbp_ext:opaque if block ~-16 ~1 ~-24 #lbp_ext:opaque if block ~-15 ~2 ~-24 #lbp_ext:opaque if block ~-15 ~ ~-24 #lbp_ext:opaque if block ~-15 ~1 ~-23 #lbp_ext:opaque if block ~-15 ~1 ~-25 #lbp_ext:opaque run setblock ~-15 ~1 ~-24 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-2,posZ:-1,sizeX:3,sizeY:22,sizeZ:3,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-15 ~1 ~-24 run function lbp_ext:info/hide/13
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-15 ~1 ~-24 {posX:-1,posY:-2,posZ:-1,sizeX:3,sizeY:22,sizeZ:3}
 execute if block ~-15 ~1 ~-24 structure_block run scoreboard players set #hid lbp_info 1
 
 # Bridge Leg
 scoreboard players set #hid lbp_info 0
-execute if score #hid lbp_info matches 0 if block ~-14 ~ ~-6 #lbp_ext:opaque if block ~-16 ~ ~-6 #lbp_ext:opaque if block ~-15 ~1 ~-6 #lbp_ext:opaque if block ~-15 ~-1 ~-6 #lbp_ext:opaque if block ~-15 ~ ~-5 #lbp_ext:opaque if block ~-15 ~ ~-7 #lbp_ext:opaque unless block ~-15 ~ ~-6 structure_block run clone ~-15 ~ ~-6 ~-15 ~ ~-6 ~-15 12 ~-6
-execute if score #hid lbp_info matches 0 if block ~-14 ~ ~-6 #lbp_ext:opaque if block ~-16 ~ ~-6 #lbp_ext:opaque if block ~-15 ~1 ~-6 #lbp_ext:opaque if block ~-15 ~-1 ~-6 #lbp_ext:opaque if block ~-15 ~ ~-5 #lbp_ext:opaque if block ~-15 ~ ~-7 #lbp_ext:opaque run setblock ~-15 ~ ~-6 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-1,posZ:-1,sizeX:3,sizeY:22,sizeZ:3,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-15 ~ ~-6 run function lbp_ext:info/hide/12
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-15 ~ ~-6 {posX:-1,posY:-1,posZ:-1,sizeX:3,sizeY:22,sizeZ:3}
 execute if block ~-15 ~ ~-6 structure_block run scoreboard players set #hid lbp_info 1
-execute if score #hid lbp_info matches 0 if block ~-14 ~1 ~-6 #lbp_ext:opaque if block ~-16 ~1 ~-6 #lbp_ext:opaque if block ~-15 ~2 ~-6 #lbp_ext:opaque if block ~-15 ~ ~-6 #lbp_ext:opaque if block ~-15 ~1 ~-5 #lbp_ext:opaque if block ~-15 ~1 ~-7 #lbp_ext:opaque unless block ~-15 ~1 ~-6 structure_block run clone ~-15 ~1 ~-6 ~-15 ~1 ~-6 ~-15 13 ~-6
-execute if score #hid lbp_info matches 0 if block ~-14 ~1 ~-6 #lbp_ext:opaque if block ~-16 ~1 ~-6 #lbp_ext:opaque if block ~-15 ~2 ~-6 #lbp_ext:opaque if block ~-15 ~ ~-6 #lbp_ext:opaque if block ~-15 ~1 ~-5 #lbp_ext:opaque if block ~-15 ~1 ~-7 #lbp_ext:opaque run setblock ~-15 ~1 ~-6 structure_block[mode=save]{mode:"SAVE",posX:-1,posY:-2,posZ:-1,sizeX:3,sizeY:22,sizeZ:3,showboundingbox:1b}
+execute if score #hid lbp_info matches 0 positioned ~-15 ~1 ~-6 run function lbp_ext:info/hide/13
+execute if score #hid lbp_info matches 0 if score #set lbp_info matches 1 run data merge block ~-15 ~1 ~-6 {posX:-1,posY:-2,posZ:-1,sizeX:3,sizeY:22,sizeZ:3}
 execute if block ~-15 ~1 ~-6 structure_block run scoreboard players set #hid lbp_info 1
